@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		441DDB992945E22107EE196C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4E93EEE851E19A55435B9A /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F40628731AE8192E004F1E3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40628721AE8192E004F1E3B /* AppDelegate.swift */; };
-		F40628751AE8192E004F1E3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40628741AE8192E004F1E3B /* ViewController.swift */; };
+		F40628751AE8192E004F1E3B /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40628741AE8192E004F1E3B /* IntroViewController.swift */; };
 		F40628781AE8192E004F1E3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F40628761AE8192E004F1E3B /* Main.storyboard */; };
 		F406287A1AE8192E004F1E3B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F40628791AE8192E004F1E3B /* Images.xcassets */; };
 		F406287D1AE8192E004F1E3B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F406287B1AE8192E004F1E3B /* LaunchScreen.xib */; };
 		F40628891AE8192F004F1E3B /* SmileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40628881AE8192F004F1E3B /* SmileTests.swift */; };
+		F40628931AE82BB2004F1E3B /* UIImage+OrientationFix.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40628921AE82BB2004F1E3B /* UIImage+OrientationFix.swift */; };
+		F406289B1AE837FC004F1E3B /* StyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406289A1AE837FC004F1E3B /* StyleManager.swift */; };
+		F40628A01AE84432004F1E3B /* SmileIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406289F1AE84432004F1E3B /* SmileIconView.swift */; };
+		F40628A11AE855C0004F1E3B /* FreigSanProBook.otf in Resources */ = {isa = PBXBuildFile; fileRef = F40628961AE83703004F1E3B /* FreigSanProBook.otf */; };
+		F40628A21AE855C2004F1E3B /* FreigSanProLig.otf in Resources */ = {isa = PBXBuildFile; fileRef = F40628971AE83703004F1E3B /* FreigSanProLig.otf */; };
+		F40628A31AE855C5004F1E3B /* FreigSanProMed.otf in Resources */ = {isa = PBXBuildFile; fileRef = F40628981AE83703004F1E3B /* FreigSanProMed.otf */; };
+		F40628A41AE855C7004F1E3B /* FreigSanProSem.otf in Resources */ = {isa = PBXBuildFile; fileRef = F40628991AE83703004F1E3B /* FreigSanProSem.otf */; };
+		F40628A61AE88390004F1E3B /* MockAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40628A51AE88390004F1E3B /* MockAlertView.swift */; };
+		F40628A81AE89F3F004F1E3B /* PhotoCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40628A71AE89F3F004F1E3B /* PhotoCaptureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +36,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		192F56E75233CC6B23D8ACCC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		363EC871C32F95363942CAA7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		EB4E93EEE851E19A55435B9A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F406286D1AE8192E004F1E3B /* Smile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F40628711AE8192E004F1E3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F40628721AE8192E004F1E3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F40628741AE8192E004F1E3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F40628741AE8192E004F1E3B /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		F40628771AE8192E004F1E3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F40628791AE8192E004F1E3B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F406287C1AE8192E004F1E3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F40628821AE8192F004F1E3B /* SmileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F40628871AE8192F004F1E3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F40628881AE8192F004F1E3B /* SmileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileTests.swift; sourceTree = "<group>"; };
+		F40628921AE82BB2004F1E3B /* UIImage+OrientationFix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+OrientationFix.swift"; sourceTree = "<group>"; };
+		F40628961AE83703004F1E3B /* FreigSanProBook.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FreigSanProBook.otf; sourceTree = "<group>"; };
+		F40628971AE83703004F1E3B /* FreigSanProLig.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FreigSanProLig.otf; sourceTree = "<group>"; };
+		F40628981AE83703004F1E3B /* FreigSanProMed.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FreigSanProMed.otf; sourceTree = "<group>"; };
+		F40628991AE83703004F1E3B /* FreigSanProSem.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FreigSanProSem.otf; sourceTree = "<group>"; };
+		F406289A1AE837FC004F1E3B /* StyleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleManager.swift; sourceTree = "<group>"; };
+		F406289C1AE8425D004F1E3B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F406289F1AE84432004F1E3B /* SmileIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmileIconView.swift; sourceTree = "<group>"; };
+		F40628A51AE88390004F1E3B /* MockAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockAlertView.swift; sourceTree = "<group>"; };
+		F40628A71AE89F3F004F1E3B /* PhotoCaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				441DDB992945E22107EE196C /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +80,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4EE2FC7B2DE7893E41D4FD54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB4E93EEE851E19A55435B9A /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6EA96FC69A379928FB6DBE7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				192F56E75233CC6B23D8ACCC /* Pods.debug.xcconfig */,
+				363EC871C32F95363942CAA7 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F40628641AE8192E004F1E3B = {
 			isa = PBXGroup;
 			children = (
+				F406289C1AE8425D004F1E3B /* README.md */,
 				F406286F1AE8192E004F1E3B /* Smile */,
 				F40628851AE8192F004F1E3B /* SmileTests */,
 				F406286E1AE8192E004F1E3B /* Products */,
+				6EA96FC69A379928FB6DBE7E /* Pods */,
+				4EE2FC7B2DE7893E41D4FD54 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,7 +122,9 @@
 			isa = PBXGroup;
 			children = (
 				F40628721AE8192E004F1E3B /* AppDelegate.swift */,
-				F40628741AE8192E004F1E3B /* ViewController.swift */,
+				F40628A91AE89F46004F1E3B /* View Controllers */,
+				F406289E1AE8441D004F1E3B /* Views */,
+				F40628941AE82BC0004F1E3B /* Tools */,
 				F40628761AE8192E004F1E3B /* Main.storyboard */,
 				F40628791AE8192E004F1E3B /* Images.xcassets */,
 				F406287B1AE8192E004F1E3B /* LaunchScreen.xib */,
@@ -90,6 +136,7 @@
 		F40628701AE8192E004F1E3B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F40628951AE836C9004F1E3B /* Assets */,
 				F40628711AE8192E004F1E3B /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -112,6 +159,44 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F40628941AE82BC0004F1E3B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F406289A1AE837FC004F1E3B /* StyleManager.swift */,
+				F40628921AE82BB2004F1E3B /* UIImage+OrientationFix.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		F40628951AE836C9004F1E3B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F40628961AE83703004F1E3B /* FreigSanProBook.otf */,
+				F40628971AE83703004F1E3B /* FreigSanProLig.otf */,
+				F40628981AE83703004F1E3B /* FreigSanProMed.otf */,
+				F40628991AE83703004F1E3B /* FreigSanProSem.otf */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		F406289E1AE8441D004F1E3B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F406289F1AE84432004F1E3B /* SmileIconView.swift */,
+				F40628A51AE88390004F1E3B /* MockAlertView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F40628A91AE89F46004F1E3B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F40628741AE8192E004F1E3B /* IntroViewController.swift */,
+				F40628A71AE89F3F004F1E3B /* PhotoCaptureViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F406288C1AE8192F004F1E3B /* Build configuration list for PBXNativeTarget "Smile" */;
 			buildPhases = (
+				BAE9C353038F9FC70AFA6BE2 /* Check Pods Manifest.lock */,
 				F40628691AE8192E004F1E3B /* Sources */,
 				F406286A1AE8192E004F1E3B /* Frameworks */,
 				F406286B1AE8192E004F1E3B /* Resources */,
+				981B1EEBE9693CA62F38911A /* Embed Pods Frameworks */,
+				C9B5318801D6B57ACFF63700 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,8 +281,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F40628781AE8192E004F1E3B /* Main.storyboard in Resources */,
+				F40628A11AE855C0004F1E3B /* FreigSanProBook.otf in Resources */,
 				F406287D1AE8192E004F1E3B /* LaunchScreen.xib in Resources */,
+				F40628A41AE855C7004F1E3B /* FreigSanProSem.otf in Resources */,
+				F40628A21AE855C2004F1E3B /* FreigSanProLig.otf in Resources */,
 				F406287A1AE8192E004F1E3B /* Images.xcassets in Resources */,
+				F40628A31AE855C5004F1E3B /* FreigSanProMed.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,13 +299,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		981B1EEBE9693CA62F38911A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAE9C353038F9FC70AFA6BE2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C9B5318801D6B57ACFF63700 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F40628691AE8192E004F1E3B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F40628751AE8192E004F1E3B /* ViewController.swift in Sources */,
+				F40628931AE82BB2004F1E3B /* UIImage+OrientationFix.swift in Sources */,
+				F406289B1AE837FC004F1E3B /* StyleManager.swift in Sources */,
+				F40628A81AE89F3F004F1E3B /* PhotoCaptureViewController.swift in Sources */,
+				F40628751AE8192E004F1E3B /* IntroViewController.swift in Sources */,
+				F40628A01AE84432004F1E3B /* SmileIconView.swift in Sources */,
 				F40628731AE8192E004F1E3B /* AppDelegate.swift in Sources */,
+				F40628A61AE88390004F1E3B /* MockAlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +483,7 @@
 		};
 		F406288D1AE8192F004F1E3B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 192F56E75233CC6B23D8ACCC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Smile/Info.plist;
@@ -348,6 +494,7 @@
 		};
 		F406288E1AE8192F004F1E3B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 363EC871C32F95363942CAA7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Smile/Info.plist;
@@ -409,6 +556,7 @@
 				F406288E1AE8192F004F1E3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F406288F1AE8192F004F1E3B /* Build configuration list for PBXNativeTarget "SmileTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +565,7 @@
 				F40628911AE8192F004F1E3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

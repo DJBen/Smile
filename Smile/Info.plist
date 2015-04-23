@@ -33,8 +33,13 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>FreigSanProBook.otf</string>
+		<string>FreigSanProLig.otf</string>
+		<string>FreigSanProMed.otf</string>
+		<string>FreigSanProSem.otf</string>
 	</array>
 </dict>
 </plist>
