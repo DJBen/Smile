@@ -9,7 +9,7 @@
 import UIKit
 import Cartography
 
-private let TutorialText: String = "To quickly detect stroke, align your face with the outline and smile out your teeth. Three photos will be taken automatically. You can also choose a custom photo from your gallery by tapping the icon on the top right corner. A guidance text will appear on the bottom of the screen to further instruct you."
+private let TutorialText: String = "To quickly detect stroke, align your face with the outline and smile out your teeth. Three photos will be taken automatically. A guidance text will appear on the bottom of the screen to further instruct you."
 
 private let BottomTutorialText: String = "Adjust the camera focus by tapping on any area of the screen. Tap anywhere to dismiss this instruction."
 

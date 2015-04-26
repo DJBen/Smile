@@ -77,6 +77,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="heU-oy-0uX" kind="unwind" identifier="backFromDiagnosis" unwindAction="unwindFromDiagnosis:" id="3LI-x3-RV9"/>
                     </connections>
