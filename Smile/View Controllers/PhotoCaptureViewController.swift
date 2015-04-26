@@ -11,6 +11,7 @@ import Cartography
 import AVFoundation
 
 private let ProcessCapturedImageSegueIdentifier = "ProcessCapturesSegue"
+let UnwindFromDiagnosisSegueIdentifier = "backFromDiagnosis"
 
 class PhotoCaptureViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureMetadataOutputObjectsDelegate, CameraPreviewViewDelegate, TutorialViewDelegate {
     
@@ -272,6 +273,7 @@ class PhotoCaptureViewController: UIViewController, AVCaptureVideoDataOutputSamp
                         self.faceOutlineView.mouthView.layer.removeAnimationForKey("animation")
                         if self.capturedImages.count == PhotoCaptureViewController.numberOfSnaps {
                             self.stopCapturing = true
+                            self.captureSession?.stopRunning()
                             self.performSegueWithIdentifier(ProcessCapturedImageSegueIdentifier, sender: self)
                         }
                     }
@@ -376,8 +378,8 @@ class PhotoCaptureViewController: UIViewController, AVCaptureVideoDataOutputSamp
         makeNavigationBarTransparent()
         navigationItem.title = "Smile"
         
-        let galleryButton: UIBarButtonItem = UIBarButtonItem(image: UIImage(named: "gallery_icon"), style: .Plain, target: self, action: "chooseFromGallery:")
-        navigationItem.rightBarButtonItem = galleryButton
+//        let galleryButton: UIBarButtonItem = UIBarButtonItem(image: UIImage(named: "gallery_icon"), style: .Plain, target: self, action: "chooseFromGallery:")
+//        navigationItem.rightBarButtonItem = galleryButton
         
         view.addSubview(previewView)
         view.addSubview(faceOutlineView)
@@ -494,6 +496,12 @@ class PhotoCaptureViewController: UIViewController, AVCaptureVideoDataOutputSamp
             diagnoseVC.capturedImages = capturedImages
         }
     }
-
+    
+    @IBAction func unwindFromDiagnosis(segue: UIStoryboardSegue) {
+        if segue.identifier == UnwindFromDiagnosisSegueIdentifier {
+            capturedImages.removeAll()
+            stopCapturing = false
+        }
+    }
 
 }

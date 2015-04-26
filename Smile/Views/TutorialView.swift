@@ -114,23 +114,23 @@ class TutorialView: UIView {
         constrain(smileView, upperVibrantView, focusRingView) { s, uv, r in
             s.height == s.width
             s.height == 40
-            s.top == s.superview!.top + 100
+            s.top == s.superview!.top + 75
             s.centerX == s.superview!.centerX
             
             uv.top == s.bottom + 20
-            uv.left == uv.superview!.leftMargin + 25
-            uv.right == uv.superview!.rightMargin - 25
+            uv.leftMargin == uv.superview!.leftMargin + 16
+            uv.rightMargin == uv.superview!.rightMargin - 16
             
-            r.top == uv.bottom + 40
+            r.top == uv.bottom + 35
             r.width == r.height
             r.width == 44
             r.centerX == r.superview!.centerX
         }
         
         layout(upperVibrantView, focusRingView, lowerVibrantView) { uv, r, bv in
-            bv.top == r.bottom + 40
-            bv.left == uv.left
-            bv.right == uv.right
+            bv.top == r.bottom + 35
+            bv.leftMargin == uv.leftMargin
+            bv.rightMargin == uv.rightMargin
         }
         
         upperVibrantView.contentView.addSubview(tutorialLabel)

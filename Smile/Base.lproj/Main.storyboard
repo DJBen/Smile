@@ -77,8 +77,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="heU-oy-0uX" kind="unwind" identifier="backFromDiagnosis" unwindAction="unwindFromDiagnosis:" id="3LI-x3-RV9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1iN-Ta-ajt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="heU-oy-0uX" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2621" y="388"/>
         </scene>

@@ -7,515 +7,314 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		005C578A6F933AC6801176B5 /* Align.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA696AB4AB00B49A2A6E54FC /* Align.swift */; };
-		0B0D63028A34CBFFA1BBC61F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2903B17799619079F4E9C4CE /* Extensions.swift */; };
-		0B4CA17D84BE487D54DFA887 /* FaceppGrouping.h in Headers */ = {isa = PBXBuildFile; fileRef = B5ADAFB2FB6599C8F544E41A /* FaceppGrouping.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		13B0B34E6B7277B877DF4FFA /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3386C2CA3966888F3F653EA8 /* Context.swift */; };
-		264D1A850513E77B417862B2 /* FaceppError.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C839EE1A7A793F99A76E676 /* FaceppError.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		2DC3FEFEB65733DF5526FE0E /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 707FE250C41A0FEF1018CFB5 /* Pods-dummy.m */; };
-		2DDFFB8042788B54E344FB6D /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6891F5874388B57972AAA733 /* LayoutProxy.swift */; };
-		2F6A5D18A5A343CE8D476E84 /* FaceppFaceset.m in Sources */ = {isa = PBXBuildFile; fileRef = C937945F9B360DB895AE902F /* FaceppFaceset.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		30BE400A2DF5EB434AA4AC57 /* FaceppGrouping.m in Sources */ = {isa = PBXBuildFile; fileRef = 357EDA14B22824713BD4AF37 /* FaceppGrouping.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		35A7271F16262861B5893B5C /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87CAEF02AF9C6FEE5DE171B /* Point.swift */; };
-		3919304A2E8BBD3C0ED5DA07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32F6A4F0BDC2A1EE712B075B /* Foundation.framework */; };
-		398A90CB86894A9F1B434C22 /* FaceppClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A61F562368D28CC2E422C917 /* FaceppClient.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		3F38A7568830AB084D48B7C8 /* Distribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C8640257DB5260556BF0C /* Distribute.swift */; };
-		4711C33EB5FFDC04134BD7D2 /* Pods-FaceppSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA14E569E537B237EB9FC893 /* Pods-FaceppSDK-dummy.m */; };
-		4B7AF74120BCA3A0D53BD993 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDA9886D22DF3ED6D5FA357 /* Priority.swift */; };
-		4DC3CB150535B62DE8040CEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32F6A4F0BDC2A1EE712B075B /* Foundation.framework */; };
-		58B4F958A06C15A7038F5BAE /* FaceppPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E37ABDB4599C77F6F99BE /* FaceppPerson.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		6215B1ED7E1254813F936A07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32F6A4F0BDC2A1EE712B075B /* Foundation.framework */; };
-		65B689C7B97EC049E4480095 /* FaceppAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = F0EA1C60C7BC58B842DD0D69 /* FaceppAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		65CDBCDEACD5009BD8745EFE /* Pods-Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8557C12C7C7F95715762C05E /* Pods-Alamofire-dummy.m */; };
-		6A9A96FA923735215079B3F1 /* Coefficients.swift in Sources */ = {isa = PBXBuildFile; fileRef = D035B79D3ACFED4B35D9F427 /* Coefficients.swift */; };
-		6AFE1B5E232F074B8C9D0165 /* FaceppGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = CC79CC06ADD8F219A5ABCCCA /* FaceppGroup.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		6B3BD8303986A1EFE9AC2340 /* Pods-Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE089042D9CA05F0980243E /* Pods-Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		70609812C9485601BBB9C45B /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AFB876DA06B88AE8B91C73E3 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		708CDB4F45980857BC20A595 /* FaceppInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2816750ABF7CAE1D316DB4E9 /* FaceppInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B1B172D0FDCDCC6CD12FA0E /* FaceppResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 655972D2B142E63F8B364FE5 /* FaceppResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7F654F8FD743ECC4106569F5 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46D55278B282A06E7C54288 /* View.swift */; };
-		80A018C6D9098C3E899B12E5 /* FaceppAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E892D855E7972C2409D587 /* FaceppAPI.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		81E37B31EDC2BEFB899FA339 /* FaceppResult.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF925CAA12AD2262BF9CB25 /* FaceppResult.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		86E0C5E9BE01D99811E12A4F /* Pods-Cartography-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD1274AB218765C9F97634F /* Pods-Cartography-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89E62EBEF11AB53470579609 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D32F96D3774975242620B8 /* Property.swift */; };
-		91D5330B28957D7755E3E6FB /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E89F4EE91DA3893D587BB5 /* Constraint.swift */; };
-		93B842605BFFFA2D8CFA39BD /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DFF7621F05DBC699B4F716 /* Size.swift */; };
-		99AC135317F4E98DEC1BF60C /* Compound.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2708B7F613D6C7B6BA4270C /* Compound.swift */; };
-		9A7FF2C9519F5219D9ECA022 /* FaceppPerson.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A86A9FB0C7845D4762C7F24 /* FaceppPerson.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A8A812858BFAACF59CF9B34 /* Pods-FaceppSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52DC4FB1D9D0E2CE00387D7A /* Pods-FaceppSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A1DE38395BA507922740DE9B /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAC27DC1F71CF62253B261C /* Layout.swift */; };
-		A44243F7152ED7C3E8CB077F /* FaceppRecognition.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CCC229AECB36A358468285 /* FaceppRecognition.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		AC59EF9C89461B2F76487165 /* FaceppError.h in Headers */ = {isa = PBXBuildFile; fileRef = FC6793A36A66503EC17B633D /* FaceppError.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B2B47694E18D953F812369EB /* FaceppTrainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B0C341C6B348BD8F455B9 /* FaceppTrainer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		BF9E8268677BFD1F08C40650 /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9404BE307E12195F178DD3F /* Dimension.swift */; };
-		C28C418FA557BFC0C38E8C47 /* Edges.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65AADE308DFF322BAB2271B /* Edges.swift */; };
-		C95A07CCEE30E5F128FFE17B /* ConstraintGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DF48CBC21FA8F1A6A80A1D /* ConstraintGroup.swift */; };
-		D4ADFF33F00F36FE5D05A276 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14C1DC65A758535DCB99B0A /* Edge.swift */; };
-		D4F58CDEB870ACB4312634AF /* FaceppTrainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CAFB1F02672657ED67EADD4 /* FaceppTrainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E251C4F140926FFABF7E2EB0 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB3E2E16296DC5CC0D715D3 /* Expression.swift */; };
-		E4DCBFF288D9EE57E6BB8783 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0364C76AD653259E7B52616 /* ViewUtils.swift */; };
-		E64A6DA438B17BCB1CA792A3 /* FaceppRecognition.h in Headers */ = {isa = PBXBuildFile; fileRef = EF6F6A0CC54D2FF287FA9450 /* FaceppRecognition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ED07752FA952FB71FEC27DE8 /* FaceppGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 388E50E959ECCCA4697380A2 /* FaceppGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE94451EC797E3A4423C2653 /* FaceppFaceset.h in Headers */ = {isa = PBXBuildFile; fileRef = E40A07816AC63EA50528B976 /* FaceppFaceset.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F08A6E70BC7A41394F750AD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32F6A4F0BDC2A1EE712B075B /* Foundation.framework */; };
-		F87C0F242D580BBBD381000B /* Pods-Cartography-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D10282CF27FFF6634442FB /* Pods-Cartography-dummy.m */; };
-		FA35A7CE5C2B9725F9CB2E43 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB6EF405016F31694F01C19 /* UIKit.framework */; };
-		FA413B56C0282BFE82468DC5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B52EC44B855AFCC5B5F05 /* Alamofire.swift */; };
-		FAAD0D85AA7A5D33E7C70147 /* FaceppDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0564F5EAC2687AD9ED29BB76 /* FaceppDetection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		FB9AEE9610D3BF8019DF4F9F /* FaceppClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 38CBA8DD68C5265D86FB77CE /* FaceppClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FEC8AA37052BB227CE899D57 /* FaceppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9945BE67498FF5A6FA40BB57 /* FaceppInfo.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		FEE75EB3D78285DB27D37B8F /* FaceppDetection.h in Headers */ = {isa = PBXBuildFile; fileRef = F5BDC44DB23692700C053F6B /* FaceppDetection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19946A8809FF58C9CBD38B88 /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A826B123CCE026FA1AFC3E /* LayoutProxy.swift */; };
+		24F088FF3FACA5993BBCCA34 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D74F363C51F18C2C651A48 /* Size.swift */; };
+		2513D9836AE571E4A9D02D71 /* ConstraintGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDF0422F0B24A6D33C5361 /* ConstraintGroup.swift */; };
+		3024D071DEE88D64812A2DC8 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDB51EA3CE0D5662483EBB5 /* Context.swift */; };
+		34C4A49B9F6DE7D7222D12FD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B60E3AAA6E05E68E1D76665 /* Extensions.swift */; };
+		3778160017830809670DD804 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CA8C64B245FCAE8EA65BBD /* Layout.swift */; };
+		5C79CE4CB970CC66221E42B9 /* Distribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE744190F36BC95B6DB1F38 /* Distribute.swift */; };
+		694B52203F4757A27E9A0D30 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD2C2E5163DC7985673AB9E /* Alamofire.swift */; };
+		766FF97DF8308786A88808B0 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1F52E9C74FB394153B4592 /* Expression.swift */; };
+		76CA0BF35DCF977FCEFDE8A3 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E79878D0CDCC150DF72A613 /* Priority.swift */; };
+		785094718951D4950465E0DD /* Pods-Cartography-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5AE7EC3D703E549A758E0F /* Pods-Cartography-dummy.m */; };
+		78555DC3FFFB5C7A3450B3FD /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA172CAC188F660E669D5C1 /* Constraint.swift */; };
+		7CD6B8A602B90E432B1E3A54 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600D2882FF6DDC120211B7BF /* ViewUtils.swift */; };
+		7F67E64C17A2E986DA9DDD13 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD9D1D08BAE0D1E91F9C934 /* Point.swift */; };
+		80212B06453FBA0615DDDDB5 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9B5A9C3440A44B53CEA12A /* Edge.swift */; };
+		87223FCEE70ABE6CF79EAB08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0C0BA0FC2588BCC05A79BBF /* Foundation.framework */; };
+		89AD164CAEE577085FC1EC1E /* Edges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB9094AE9D988BB11FC4845 /* Edges.swift */; };
+		92E6C060F693C45ED809BFE3 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929DB67B68AF524CFF6153AC /* Property.swift */; };
+		9E2C13E2286363297367EDDD /* Pods-Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE8B636597022AD46C5038E1 /* Pods-Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7459168447F1C0C456A5E18 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F0AA0DD8F2DD022492F590 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A79A7787E50CDEADC31BE42C /* Pods-Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 316F85B9895A5C89A610B7A0 /* Pods-Alamofire-dummy.m */; };
+		AFA6F35FC1747FC514607769 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2DEA66BA691E9E75C1C98B /* View.swift */; };
+		B6FDF8959D1401F2D2F48D7C /* Coefficients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4EC1472CF1FACC3C8F668B /* Coefficients.swift */; };
+		C5B3AE30DCD54F1C82B87B68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0C0BA0FC2588BCC05A79BBF /* Foundation.framework */; };
+		D54DC680F2F752DE122A06BA /* Compound.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FA761EC0731E81E88DF227 /* Compound.swift */; };
+		D76B000B5FC7753C8813A744 /* Pods-Cartography-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B20BE5B243F3C93A4D47EF89 /* Pods-Cartography-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB705B3EB3388AF20B9D7665 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0C0BA0FC2588BCC05A79BBF /* Foundation.framework */; };
+		DC7A68B3AF883684D799B912 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8B0FC8B9C02EDBCDAFFA41 /* Pods-dummy.m */; };
+		DE3E19169452AE80A582F5C5 /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCD4AC6C2E67715B7A01A70 /* Dimension.swift */; };
+		DE402A1F777DDFA2A0CF2159 /* Align.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C07D7C2A3A3DA6FAE31C70 /* Align.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0EBB188245AA5015F13BBE8A /* PBXContainerItemProxy */ = {
+		6925CA3EFD29784E37CD46DA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9F90C397F6A87EAEFFA08252 /* Project object */;
+			containerPortal = 773FEC82E8E2A266BDE70870 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5A19AA8FBEEE2EE3DB7CE2C6;
+			remoteGlobalIDString = A6EDFBEB5067869AA669802F;
 			remoteInfo = "Pods-Cartography";
 		};
-		BEE99E80C10594D64C5234A2 /* PBXContainerItemProxy */ = {
+		8DEC9F04930338D9472224B6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9F90C397F6A87EAEFFA08252 /* Project object */;
+			containerPortal = 773FEC82E8E2A266BDE70870 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 79F4C284DA1A62C29356C476;
+			remoteGlobalIDString = 32459E77480A3C165D3BA1C0;
 			remoteInfo = "Pods-Alamofire";
-		};
-		CC7D76222196684302DE2310 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9F90C397F6A87EAEFFA08252 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 62DA72C6964D96B6AC69715F;
-			remoteInfo = "Pods-FaceppSDK";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		017D6D5B020E07D3FAFDCB31 /* Pods-Alamofire-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Alamofire-Private.xcconfig"; sourceTree = "<group>"; };
-		02D32F96D3774975242620B8 /* Property.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Property.swift; path = Cartography/Property.swift; sourceTree = "<group>"; };
-		047B8371491F2C4FD564C9B3 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		0564F5EAC2687AD9ED29BB76 /* FaceppDetection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FaceppDetection.m; path = FaceppSDK_ARC/FaceppAPISource/FaceppDetection.m; sourceTree = "<group>"; };
-		09A2211671CAE34BB7B586E4 /* FaceppSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FaceppSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		09E5745D77EE811CFD0B551B /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
-		0C3A683D2E5DD436A6F49992 /* Pods-Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		0E210C36A4FF19026CB1196D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		13E89F4EE91DA3893D587BB5 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Cartography/Constraint.swift; sourceTree = "<group>"; };
-		2816750ABF7CAE1D316DB4E9 /* FaceppInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FaceppInfo.h; path = FaceppSDK_ARC/FaceppAPISource/FaceppInfo.h; sourceTree = "<group>"; };
-		2903B17799619079F4E9C4CE /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Cartography/Extensions.swift; sourceTree = "<group>"; };
-		2A760174E55B666983AA223A /* Pods-Cartography.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cartography.xcconfig"; sourceTree = "<group>"; };
-		2E2BED31459AEAD182C306E0 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		305B52EC44B855AFCC5B5F05 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		32F6A4F0BDC2A1EE712B075B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3386C2CA3966888F3F653EA8 /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = Cartography/Context.swift; sourceTree = "<group>"; };
-		357EDA14B22824713BD4AF37 /* FaceppGrouping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FaceppGrouping.m; path = FaceppSDK_ARC/FaceppAPISource/FaceppGrouping.m; sourceTree = "<group>"; };
-		388E50E959ECCCA4697380A2 /* FaceppGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FaceppGroup.h; path = FaceppSDK_ARC/FaceppAPISource/FaceppGroup.h; sourceTree = "<group>"; };
-		38CBA8DD68C5265D86FB77CE /* FaceppClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FaceppClient.h; path = FaceppSDK_ARC/FaceppAPISource/FaceppClient.h; sourceTree = "<group>"; };
-		3D7B0C341C6B348BD8F455B9 /* FaceppTrainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FaceppTrainer.m; path = FaceppSDK_ARC/FaceppAPISource/FaceppTrainer.m; sourceTree = "<group>"; };
-		403C8640257DB5260556BF0C /* Distribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Distribute.swift; path = Cartography/Distribute.swift; sourceTree = "<group>"; };
-		422C48705E2708595F3B1431 /* Pods-Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Alamofire.xcconfig"; sourceTree = "<group>"; };
-		4B6CB67A8AFBFE32023F5B72 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		4CAFB1F02672657ED67EADD4 /* FaceppTrainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FaceppTrainer.h; path = FaceppSDK_ARC/FaceppAPISource/FaceppTrainer.h; sourceTree = "<group>"; };
-		50E892D855E7972C2409D587 /* FaceppAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FaceppAPI.m; path = FaceppSDK_ARC/FaceppAPI.m; sourceTree = "<group>"; };
-		52DC4FB1D9D0E2CE00387D7A /* Pods-FaceppSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FaceppSDK-umbrella.h"; sourceTree = "<group>"; };
-		53CD75C671DD6F5BB20B53CB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		57CCC229AECB36A358468285 /* FaceppRecognition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FaceppRecognition.m; path = FaceppSDK_ARC/FaceppAPISource/FaceppRecognition.m; sourceTree = "<group>"; };
-		5FAB933F635133DF00FEC192 /* Pods-Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Alamofire.modulemap"; sourceTree = "<group>"; };
-		5FE089042D9CA05F0980243E /* Pods-Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		61D10282CF27FFF6634442FB /* Pods-Cartography-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cartography-dummy.m"; sourceTree = "<group>"; };
-		61DFF7621F05DBC699B4F716 /* Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Size.swift; path = Cartography/Size.swift; sourceTree = "<group>"; };
-		655972D2B142E63F8B364FE5 /* FaceppResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FaceppResult.h; path = FaceppSDK_ARC/FaceppResult/FaceppResult.h; sourceTree = "<group>"; };
-		6891F5874388B57972AAA733 /* LayoutProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutProxy.swift; path = Cartography/LayoutProxy.swift; sourceTree = "<group>"; };
-		6A86A9FB0C7845D4762C7F24 /* FaceppPerson.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FaceppPerson.h; path = FaceppSDK_ARC/FaceppAPISource/FaceppPerson.h; sourceTree = "<group>"; };
-		707FE250C41A0FEF1018CFB5 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		739E37ABDB4599C77F6F99BE /* FaceppPerson.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FaceppPerson.m; path = FaceppSDK_ARC/FaceppAPISource/FaceppPerson.m; sourceTree = "<group>"; };
-		781917687274D91C747F69E9 /* Pods-FaceppSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FaceppSDK-prefix.pch"; sourceTree = "<group>"; };
-		85093D9D303BD055E6634122 /* Pods-Cartography-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cartography-Private.xcconfig"; sourceTree = "<group>"; };
-		8557C12C7C7F95715762C05E /* Pods-Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Alamofire-dummy.m"; sourceTree = "<group>"; };
-		86DD86219279011D9E0F7C95 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8C839EE1A7A793F99A76E676 /* FaceppError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FaceppError.m; path = FaceppSDK_ARC/FaceppResult/FaceppError.m; sourceTree = "<group>"; };
-		8CB3E2E16296DC5CC0D715D3 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Cartography/Expression.swift; sourceTree = "<group>"; };
-		8EE1A158A6681504BB2CF335 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		967A45DDB578AB74F80895B5 /* Pods-FaceppSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FaceppSDK.modulemap"; sourceTree = "<group>"; };
-		97CF9AA21AAADE4057F1B431 /* Pods-Cartography-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Cartography-prefix.pch"; sourceTree = "<group>"; };
-		98F83BFCDC1C0AD32E7A315C /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		9945BE67498FF5A6FA40BB57 /* FaceppInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FaceppInfo.m; path = FaceppSDK_ARC/FaceppAPISource/FaceppInfo.m; sourceTree = "<group>"; };
-		A61F562368D28CC2E422C917 /* FaceppClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FaceppClient.m; path = FaceppSDK_ARC/FaceppAPISource/FaceppClient.m; sourceTree = "<group>"; };
-		A762D7E52300CDDB04E04B87 /* Cartography.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cartography.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A84FEA681B2FE4379938B9EB /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		AAD1274AB218765C9F97634F /* Pods-Cartography-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Cartography-umbrella.h"; sourceTree = "<group>"; };
-		ACB6EF405016F31694F01C19 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		AEBA45A627699C07E3DDD3BD /* Pods-Cartography.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Cartography.modulemap"; sourceTree = "<group>"; };
-		AFB876DA06B88AE8B91C73E3 /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
-		B198D2FB1ACBEA46FE81C106 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		B5ADAFB2FB6599C8F544E41A /* FaceppGrouping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FaceppGrouping.h; path = FaceppSDK_ARC/FaceppAPISource/FaceppGrouping.h; sourceTree = "<group>"; };
-		BA696AB4AB00B49A2A6E54FC /* Align.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Align.swift; path = Cartography/Align.swift; sourceTree = "<group>"; };
-		BBAC27DC1F71CF62253B261C /* Layout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Layout.swift; path = Cartography/Layout.swift; sourceTree = "<group>"; };
-		C0364C76AD653259E7B52616 /* ViewUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewUtils.swift; path = Cartography/ViewUtils.swift; sourceTree = "<group>"; };
-		C1EAAEA157A936D83CACB562 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
-		C46D55278B282A06E7C54288 /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = View.swift; path = Cartography/View.swift; sourceTree = "<group>"; };
-		C6EF6ACA4B3F3B954F1A7CA3 /* Pods-FaceppSDK-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FaceppSDK-Private.xcconfig"; sourceTree = "<group>"; };
-		C937945F9B360DB895AE902F /* FaceppFaceset.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FaceppFaceset.m; path = FaceppSDK_ARC/FaceppAPISource/FaceppFaceset.m; sourceTree = "<group>"; };
-		C9404BE307E12195F178DD3F /* Dimension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dimension.swift; path = Cartography/Dimension.swift; sourceTree = "<group>"; };
-		CC79CC06ADD8F219A5ABCCCA /* FaceppGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FaceppGroup.m; path = FaceppSDK_ARC/FaceppAPISource/FaceppGroup.m; sourceTree = "<group>"; };
-		CEF925CAA12AD2262BF9CB25 /* FaceppResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FaceppResult.m; path = FaceppSDK_ARC/FaceppResult/FaceppResult.m; sourceTree = "<group>"; };
-		D035B79D3ACFED4B35D9F427 /* Coefficients.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coefficients.swift; path = Cartography/Coefficients.swift; sourceTree = "<group>"; };
-		D1DF48CBC21FA8F1A6A80A1D /* ConstraintGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintGroup.swift; path = Cartography/ConstraintGroup.swift; sourceTree = "<group>"; };
-		DDD4ABA6251E6AD8E9205DD2 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E014242D8E5A170FDD23E383 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E40A07816AC63EA50528B976 /* FaceppFaceset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FaceppFaceset.h; path = FaceppSDK_ARC/FaceppAPISource/FaceppFaceset.h; sourceTree = "<group>"; };
-		E65AADE308DFF322BAB2271B /* Edges.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edges.swift; path = Cartography/Edges.swift; sourceTree = "<group>"; };
-		EA14E569E537B237EB9FC893 /* Pods-FaceppSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FaceppSDK-dummy.m"; sourceTree = "<group>"; };
-		EBDA9886D22DF3ED6D5FA357 /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = Cartography/Priority.swift; sourceTree = "<group>"; };
-		EF6F6A0CC54D2FF287FA9450 /* FaceppRecognition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FaceppRecognition.h; path = FaceppSDK_ARC/FaceppAPISource/FaceppRecognition.h; sourceTree = "<group>"; };
-		F0EA1C60C7BC58B842DD0D69 /* FaceppAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FaceppAPI.h; path = FaceppSDK_ARC/FaceppAPI.h; sourceTree = "<group>"; };
-		F14C1DC65A758535DCB99B0A /* Edge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edge.swift; path = Cartography/Edge.swift; sourceTree = "<group>"; };
-		F2708B7F613D6C7B6BA4270C /* Compound.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compound.swift; path = Cartography/Compound.swift; sourceTree = "<group>"; };
-		F5BDC44DB23692700C053F6B /* FaceppDetection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FaceppDetection.h; path = FaceppSDK_ARC/FaceppAPISource/FaceppDetection.h; sourceTree = "<group>"; };
-		F666DB29B5A266B1E1A84094 /* Pods-FaceppSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FaceppSDK.xcconfig"; sourceTree = "<group>"; };
-		F87CAEF02AF9C6FEE5DE171B /* Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Point.swift; path = Cartography/Point.swift; sourceTree = "<group>"; };
-		FC6793A36A66503EC17B633D /* FaceppError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FaceppError.h; path = FaceppSDK_ARC/FaceppResult/FaceppError.h; sourceTree = "<group>"; };
-		FCBC4D9538BA9602011B5188 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DB9094AE9D988BB11FC4845 /* Edges.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edges.swift; path = Cartography/Edges.swift; sourceTree = "<group>"; };
+		18057E79EBF9BF43F2CF5A3B /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1C1F52E9C74FB394153B4592 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Cartography/Expression.swift; sourceTree = "<group>"; };
+		1DE744190F36BC95B6DB1F38 /* Distribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Distribute.swift; path = Cartography/Distribute.swift; sourceTree = "<group>"; };
+		23DAA4614CA4526B024C2F51 /* Pods-Cartography.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Cartography.modulemap"; sourceTree = "<group>"; };
+		30C07D7C2A3A3DA6FAE31C70 /* Align.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Align.swift; path = Cartography/Align.swift; sourceTree = "<group>"; };
+		316F85B9895A5C89A610B7A0 /* Pods-Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Alamofire-dummy.m"; sourceTree = "<group>"; };
+		3676770C56860F2FC52D47A3 /* Cartography.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cartography.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C5AE7EC3D703E549A758E0F /* Pods-Cartography-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cartography-dummy.m"; sourceTree = "<group>"; };
+		3F5E68F7A96C09753CE04829 /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
+		4B448F67B3138B1ECFBB18AF /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4BD2C2E5163DC7985673AB9E /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		4EFDF0422F0B24A6D33C5361 /* ConstraintGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintGroup.swift; path = Cartography/ConstraintGroup.swift; sourceTree = "<group>"; };
+		4F6E24CCCF19E5ABAA1CD308 /* Pods-Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		552E85DD51E652CF96BA93B3 /* Pods-Cartography.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cartography.xcconfig"; sourceTree = "<group>"; };
+		600D2882FF6DDC120211B7BF /* ViewUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewUtils.swift; path = Cartography/ViewUtils.swift; sourceTree = "<group>"; };
+		63109BA62D6A6D548F852EA0 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		641C3D41E98EF24121FD93F5 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		6508C4CCFAE8465FDD3011DA /* Pods-Cartography-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cartography-Private.xcconfig"; sourceTree = "<group>"; };
+		67F0AA0DD8F2DD022492F590 /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		6A9B5A9C3440A44B53CEA12A /* Edge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edge.swift; path = Cartography/Edge.swift; sourceTree = "<group>"; };
+		6E79878D0CDCC150DF72A613 /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = Cartography/Priority.swift; sourceTree = "<group>"; };
+		7230094AF11250254B639B62 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72CA8C64B245FCAE8EA65BBD /* Layout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Layout.swift; path = Cartography/Layout.swift; sourceTree = "<group>"; };
+		74E1DEA01A73DE25F25A6099 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		77FC307EB300990391F5244C /* Pods-Cartography-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Cartography-prefix.pch"; sourceTree = "<group>"; };
+		7B4EC1472CF1FACC3C8F668B /* Coefficients.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coefficients.swift; path = Cartography/Coefficients.swift; sourceTree = "<group>"; };
+		7E2DEA66BA691E9E75C1C98B /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = View.swift; path = Cartography/View.swift; sourceTree = "<group>"; };
+		7EA172CAC188F660E669D5C1 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Cartography/Constraint.swift; sourceTree = "<group>"; };
+		839E5BF4530FD212EBC9C643 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83D74F363C51F18C2C651A48 /* Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Size.swift; path = Cartography/Size.swift; sourceTree = "<group>"; };
+		8A8B0FC8B9C02EDBCDAFFA41 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		8BD9D1D08BAE0D1E91F9C934 /* Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Point.swift; path = Cartography/Point.swift; sourceTree = "<group>"; };
+		8F1C1E997B3F82545F58C6A7 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		9242EE6BEB614DD183DD6130 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		929DB67B68AF524CFF6153AC /* Property.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Property.swift; path = Cartography/Property.swift; sourceTree = "<group>"; };
+		9B60E3AAA6E05E68E1D76665 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Cartography/Extensions.swift; sourceTree = "<group>"; };
+		9F05B39A21DC90D41F2D3529 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		A751401DFFFD46755C790588 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		ADDB51EA3CE0D5662483EBB5 /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = Cartography/Context.swift; sourceTree = "<group>"; };
+		B20A77A2AA1F0AE3DDBECD90 /* Pods-Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Alamofire.modulemap"; sourceTree = "<group>"; };
+		B20BE5B243F3C93A4D47EF89 /* Pods-Cartography-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Cartography-umbrella.h"; sourceTree = "<group>"; };
+		CAFB53A856BD2E87C06B0557 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6A5EA889132B83140074A3E /* Pods-Alamofire-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Alamofire-Private.xcconfig"; sourceTree = "<group>"; };
+		D6FA761EC0731E81E88DF227 /* Compound.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compound.swift; path = Cartography/Compound.swift; sourceTree = "<group>"; };
+		F0A826B123CCE026FA1AFC3E /* LayoutProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutProxy.swift; path = Cartography/LayoutProxy.swift; sourceTree = "<group>"; };
+		F0C0BA0FC2588BCC05A79BBF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F1159AE7F7928B5786C848E3 /* Pods-Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Alamofire.xcconfig"; sourceTree = "<group>"; };
+		F738214436C383D186E857F7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDCD4AC6C2E67715B7A01A70 /* Dimension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dimension.swift; path = Cartography/Dimension.swift; sourceTree = "<group>"; };
+		FE8B636597022AD46C5038E1 /* Pods-Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Alamofire-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		17780D9C9998CF4F3D215E9E /* Frameworks */ = {
+		2BB45D2219E99070991A24DE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3919304A2E8BBD3C0ED5DA07 /* Foundation.framework in Frameworks */,
+				87223FCEE70ABE6CF79EAB08 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		74422F3D0826D836F8BEFB10 /* Frameworks */ = {
+		C819CB99CD415D866778E3FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F08A6E70BC7A41394F750AD7 /* Foundation.framework in Frameworks */,
+				C5B3AE30DCD54F1C82B87B68 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C45698D675D5A321BF810D29 /* Frameworks */ = {
+		EC633A586113BEE40632782E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DC3CB150535B62DE8040CEF /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FB3E82C11CCB68D7A652FA47 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6215B1ED7E1254813F936A07 /* Foundation.framework in Frameworks */,
-				FA35A7CE5C2B9725F9CB2E43 /* UIKit.framework in Frameworks */,
+				DB705B3EB3388AF20B9D7665 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0AA4D6CA867F296D206D3619 /* Cartography */ = {
+		007FD0A801947AF88BDA1FF2 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BA696AB4AB00B49A2A6E54FC /* Align.swift */,
-				D035B79D3ACFED4B35D9F427 /* Coefficients.swift */,
-				F2708B7F613D6C7B6BA4270C /* Compound.swift */,
-				13E89F4EE91DA3893D587BB5 /* Constraint.swift */,
-				D1DF48CBC21FA8F1A6A80A1D /* ConstraintGroup.swift */,
-				3386C2CA3966888F3F653EA8 /* Context.swift */,
-				C9404BE307E12195F178DD3F /* Dimension.swift */,
-				403C8640257DB5260556BF0C /* Distribute.swift */,
-				F14C1DC65A758535DCB99B0A /* Edge.swift */,
-				E65AADE308DFF322BAB2271B /* Edges.swift */,
-				8CB3E2E16296DC5CC0D715D3 /* Expression.swift */,
-				2903B17799619079F4E9C4CE /* Extensions.swift */,
-				BBAC27DC1F71CF62253B261C /* Layout.swift */,
-				6891F5874388B57972AAA733 /* LayoutProxy.swift */,
-				F87CAEF02AF9C6FEE5DE171B /* Point.swift */,
-				EBDA9886D22DF3ED6D5FA357 /* Priority.swift */,
-				02D32F96D3774975242620B8 /* Property.swift */,
-				61DFF7621F05DBC699B4F716 /* Size.swift */,
-				C46D55278B282A06E7C54288 /* View.swift */,
-				C0364C76AD653259E7B52616 /* ViewUtils.swift */,
-				676858C1B16A992195D1D694 /* Support Files */,
+				048AA52A7FAF2BA27816C428 /* Pods */,
 			);
-			path = Cartography;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		0FBFEC212C1A263B653F598A /* iOS */ = {
+		048AA52A7FAF2BA27816C428 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				32F6A4F0BDC2A1EE712B075B /* Foundation.framework */,
-				ACB6EF405016F31694F01C19 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		3A1D582364D15A4B754A217C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8EE1A158A6681504BB2CF335 /* Info.plist */,
-				09E5745D77EE811CFD0B551B /* Pods.modulemap */,
-				A84FEA681B2FE4379938B9EB /* Pods-acknowledgements.markdown */,
-				98F83BFCDC1C0AD32E7A315C /* Pods-acknowledgements.plist */,
-				707FE250C41A0FEF1018CFB5 /* Pods-dummy.m */,
-				B198D2FB1ACBEA46FE81C106 /* Pods-environment.h */,
-				C1EAAEA157A936D83CACB562 /* Pods-frameworks.sh */,
-				4B6CB67A8AFBFE32023F5B72 /* Pods-resources.sh */,
-				AFB876DA06B88AE8B91C73E3 /* Pods-umbrella.h */,
-				0E210C36A4FF19026CB1196D /* Pods.debug.xcconfig */,
-				53CD75C671DD6F5BB20B53CB /* Pods.release.xcconfig */,
+				F738214436C383D186E857F7 /* Info.plist */,
+				3F5E68F7A96C09753CE04829 /* Pods.modulemap */,
+				4B448F67B3138B1ECFBB18AF /* Pods-acknowledgements.markdown */,
+				8F1C1E997B3F82545F58C6A7 /* Pods-acknowledgements.plist */,
+				8A8B0FC8B9C02EDBCDAFFA41 /* Pods-dummy.m */,
+				A751401DFFFD46755C790588 /* Pods-environment.h */,
+				641C3D41E98EF24121FD93F5 /* Pods-frameworks.sh */,
+				74E1DEA01A73DE25F25A6099 /* Pods-resources.sh */,
+				67F0AA0DD8F2DD022492F590 /* Pods-umbrella.h */,
+				9242EE6BEB614DD183DD6130 /* Pods.debug.xcconfig */,
+				9F05B39A21DC90D41F2D3529 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
-		61E10D08E2C00BF21E99D8E2 /* Frameworks */ = {
+		0F9BD43E8EE55DDA7A7CAE5E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0FBFEC212C1A263B653F598A /* iOS */,
+				63109BA62D6A6D548F852EA0 /* Alamofire.framework */,
+				3676770C56860F2FC52D47A3 /* Cartography.framework */,
+				CAFB53A856BD2E87C06B0557 /* Pods.framework */,
 			);
-			name = Frameworks;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		676858C1B16A992195D1D694 /* Support Files */ = {
+		17DC96115DF29E9C91243CFB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FCBC4D9538BA9602011B5188 /* Info.plist */,
-				AEBA45A627699C07E3DDD3BD /* Pods-Cartography.modulemap */,
-				2A760174E55B666983AA223A /* Pods-Cartography.xcconfig */,
-				85093D9D303BD055E6634122 /* Pods-Cartography-Private.xcconfig */,
-				61D10282CF27FFF6634442FB /* Pods-Cartography-dummy.m */,
-				97CF9AA21AAADE4057F1B431 /* Pods-Cartography-prefix.pch */,
-				AAD1274AB218765C9F97634F /* Pods-Cartography-umbrella.h */,
+				7230094AF11250254B639B62 /* Info.plist */,
+				23DAA4614CA4526B024C2F51 /* Pods-Cartography.modulemap */,
+				552E85DD51E652CF96BA93B3 /* Pods-Cartography.xcconfig */,
+				6508C4CCFAE8465FDD3011DA /* Pods-Cartography-Private.xcconfig */,
+				3C5AE7EC3D703E549A758E0F /* Pods-Cartography-dummy.m */,
+				77FC307EB300990391F5244C /* Pods-Cartography-prefix.pch */,
+				B20BE5B243F3C93A4D47EF89 /* Pods-Cartography-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-Cartography";
 			sourceTree = "<group>";
 		};
-		72B1BF9673EF336D07B3D79D /* Support Files */ = {
+		48C1C60C5113543F6FA99226 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E014242D8E5A170FDD23E383 /* Info.plist */,
-				5FAB933F635133DF00FEC192 /* Pods-Alamofire.modulemap */,
-				422C48705E2708595F3B1431 /* Pods-Alamofire.xcconfig */,
-				017D6D5B020E07D3FAFDCB31 /* Pods-Alamofire-Private.xcconfig */,
-				8557C12C7C7F95715762C05E /* Pods-Alamofire-dummy.m */,
-				0C3A683D2E5DD436A6F49992 /* Pods-Alamofire-prefix.pch */,
-				5FE089042D9CA05F0980243E /* Pods-Alamofire-umbrella.h */,
+				F1794BBC60CA8F580EB2ABEE /* Alamofire */,
+				D40D28CD727AD37BA12CA2A2 /* Cartography */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		72B473B970865E8464CBE364 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0248BE18E3C7C94B4EA1F71 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92B6627859FA07869D142091 = {
+			isa = PBXGroup;
+			children = (
+				18057E79EBF9BF43F2CF5A3B /* Podfile */,
+				72B473B970865E8464CBE364 /* Frameworks */,
+				48C1C60C5113543F6FA99226 /* Pods */,
+				0F9BD43E8EE55DDA7A7CAE5E /* Products */,
+				007FD0A801947AF88BDA1FF2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B0248BE18E3C7C94B4EA1F71 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F0C0BA0FC2588BCC05A79BBF /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CA79D1D14B3D0544B110A770 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				839E5BF4530FD212EBC9C643 /* Info.plist */,
+				B20A77A2AA1F0AE3DDBECD90 /* Pods-Alamofire.modulemap */,
+				F1159AE7F7928B5786C848E3 /* Pods-Alamofire.xcconfig */,
+				D6A5EA889132B83140074A3E /* Pods-Alamofire-Private.xcconfig */,
+				316F85B9895A5C89A610B7A0 /* Pods-Alamofire-dummy.m */,
+				4F6E24CCCF19E5ABAA1CD308 /* Pods-Alamofire-prefix.pch */,
+				FE8B636597022AD46C5038E1 /* Pods-Alamofire-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-Alamofire";
 			sourceTree = "<group>";
 		};
-		8955919B7E05656291859A57 /* Alamofire */ = {
+		D40D28CD727AD37BA12CA2A2 /* Cartography */ = {
 			isa = PBXGroup;
 			children = (
-				305B52EC44B855AFCC5B5F05 /* Alamofire.swift */,
-				72B1BF9673EF336D07B3D79D /* Support Files */,
+				30C07D7C2A3A3DA6FAE31C70 /* Align.swift */,
+				7B4EC1472CF1FACC3C8F668B /* Coefficients.swift */,
+				D6FA761EC0731E81E88DF227 /* Compound.swift */,
+				7EA172CAC188F660E669D5C1 /* Constraint.swift */,
+				4EFDF0422F0B24A6D33C5361 /* ConstraintGroup.swift */,
+				ADDB51EA3CE0D5662483EBB5 /* Context.swift */,
+				FDCD4AC6C2E67715B7A01A70 /* Dimension.swift */,
+				1DE744190F36BC95B6DB1F38 /* Distribute.swift */,
+				6A9B5A9C3440A44B53CEA12A /* Edge.swift */,
+				0DB9094AE9D988BB11FC4845 /* Edges.swift */,
+				1C1F52E9C74FB394153B4592 /* Expression.swift */,
+				9B60E3AAA6E05E68E1D76665 /* Extensions.swift */,
+				72CA8C64B245FCAE8EA65BBD /* Layout.swift */,
+				F0A826B123CCE026FA1AFC3E /* LayoutProxy.swift */,
+				8BD9D1D08BAE0D1E91F9C934 /* Point.swift */,
+				6E79878D0CDCC150DF72A613 /* Priority.swift */,
+				929DB67B68AF524CFF6153AC /* Property.swift */,
+				83D74F363C51F18C2C651A48 /* Size.swift */,
+				7E2DEA66BA691E9E75C1C98B /* View.swift */,
+				600D2882FF6DDC120211B7BF /* ViewUtils.swift */,
+				17DC96115DF29E9C91243CFB /* Support Files */,
+			);
+			path = Cartography;
+			sourceTree = "<group>";
+		};
+		F1794BBC60CA8F580EB2ABEE /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				4BD2C2E5163DC7985673AB9E /* Alamofire.swift */,
+				CA79D1D14B3D0544B110A770 /* Support Files */,
 			);
 			path = Alamofire;
-			sourceTree = "<group>";
-		};
-		8AB202BB8F75D7327493B61D = {
-			isa = PBXGroup;
-			children = (
-				047B8371491F2C4FD564C9B3 /* Podfile */,
-				61E10D08E2C00BF21E99D8E2 /* Frameworks */,
-				91B9CDCC9C4E739379597E03 /* Pods */,
-				E48EF4284DE87CB3C41E1225 /* Products */,
-				F125AC1B9E3C7B4BC0512EF5 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		91B9CDCC9C4E739379597E03 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8955919B7E05656291859A57 /* Alamofire */,
-				0AA4D6CA867F296D206D3619 /* Cartography */,
-				B98B4CE993C910F5A718F1F1 /* FaceppSDK */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		B98B4CE993C910F5A718F1F1 /* FaceppSDK */ = {
-			isa = PBXGroup;
-			children = (
-				F0EA1C60C7BC58B842DD0D69 /* FaceppAPI.h */,
-				50E892D855E7972C2409D587 /* FaceppAPI.m */,
-				38CBA8DD68C5265D86FB77CE /* FaceppClient.h */,
-				A61F562368D28CC2E422C917 /* FaceppClient.m */,
-				F5BDC44DB23692700C053F6B /* FaceppDetection.h */,
-				0564F5EAC2687AD9ED29BB76 /* FaceppDetection.m */,
-				FC6793A36A66503EC17B633D /* FaceppError.h */,
-				8C839EE1A7A793F99A76E676 /* FaceppError.m */,
-				E40A07816AC63EA50528B976 /* FaceppFaceset.h */,
-				C937945F9B360DB895AE902F /* FaceppFaceset.m */,
-				388E50E959ECCCA4697380A2 /* FaceppGroup.h */,
-				CC79CC06ADD8F219A5ABCCCA /* FaceppGroup.m */,
-				B5ADAFB2FB6599C8F544E41A /* FaceppGrouping.h */,
-				357EDA14B22824713BD4AF37 /* FaceppGrouping.m */,
-				2816750ABF7CAE1D316DB4E9 /* FaceppInfo.h */,
-				9945BE67498FF5A6FA40BB57 /* FaceppInfo.m */,
-				6A86A9FB0C7845D4762C7F24 /* FaceppPerson.h */,
-				739E37ABDB4599C77F6F99BE /* FaceppPerson.m */,
-				EF6F6A0CC54D2FF287FA9450 /* FaceppRecognition.h */,
-				57CCC229AECB36A358468285 /* FaceppRecognition.m */,
-				655972D2B142E63F8B364FE5 /* FaceppResult.h */,
-				CEF925CAA12AD2262BF9CB25 /* FaceppResult.m */,
-				4CAFB1F02672657ED67EADD4 /* FaceppTrainer.h */,
-				3D7B0C341C6B348BD8F455B9 /* FaceppTrainer.m */,
-				DC66372B98008C95D18F99A3 /* Support Files */,
-			);
-			path = FaceppSDK;
-			sourceTree = "<group>";
-		};
-		DC66372B98008C95D18F99A3 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				86DD86219279011D9E0F7C95 /* Info.plist */,
-				967A45DDB578AB74F80895B5 /* Pods-FaceppSDK.modulemap */,
-				F666DB29B5A266B1E1A84094 /* Pods-FaceppSDK.xcconfig */,
-				C6EF6ACA4B3F3B954F1A7CA3 /* Pods-FaceppSDK-Private.xcconfig */,
-				EA14E569E537B237EB9FC893 /* Pods-FaceppSDK-dummy.m */,
-				781917687274D91C747F69E9 /* Pods-FaceppSDK-prefix.pch */,
-				52DC4FB1D9D0E2CE00387D7A /* Pods-FaceppSDK-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-FaceppSDK";
-			sourceTree = "<group>";
-		};
-		E48EF4284DE87CB3C41E1225 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2E2BED31459AEAD182C306E0 /* Alamofire.framework */,
-				A762D7E52300CDDB04E04B87 /* Cartography.framework */,
-				09A2211671CAE34BB7B586E4 /* FaceppSDK.framework */,
-				DDD4ABA6251E6AD8E9205DD2 /* Pods.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		F125AC1B9E3C7B4BC0512EF5 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3A1D582364D15A4B754A217C /* Pods */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3B570AF64F797B0F89E3300D /* Headers */ = {
+		98B419AC0C5ECE71D737140A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86E0C5E9BE01D99811E12A4F /* Pods-Cartography-umbrella.h in Headers */,
+				9E2C13E2286363297367EDDD /* Pods-Alamofire-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		440B7C3EBC07F92335002252 /* Headers */ = {
+		C21B2E78A2932E337CAB84E1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70609812C9485601BBB9C45B /* Pods-umbrella.h in Headers */,
+				A7459168447F1C0C456A5E18 /* Pods-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AE6B166C35884CA95FFF1FEF /* Headers */ = {
+		CCDDD45DA12368893FE102B3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65B689C7B97EC049E4480095 /* FaceppAPI.h in Headers */,
-				FB9AEE9610D3BF8019DF4F9F /* FaceppClient.h in Headers */,
-				FEE75EB3D78285DB27D37B8F /* FaceppDetection.h in Headers */,
-				AC59EF9C89461B2F76487165 /* FaceppError.h in Headers */,
-				EE94451EC797E3A4423C2653 /* FaceppFaceset.h in Headers */,
-				ED07752FA952FB71FEC27DE8 /* FaceppGroup.h in Headers */,
-				0B4CA17D84BE487D54DFA887 /* FaceppGrouping.h in Headers */,
-				708CDB4F45980857BC20A595 /* FaceppInfo.h in Headers */,
-				9A7FF2C9519F5219D9ECA022 /* FaceppPerson.h in Headers */,
-				E64A6DA438B17BCB1CA792A3 /* FaceppRecognition.h in Headers */,
-				7B1B172D0FDCDCC6CD12FA0E /* FaceppResult.h in Headers */,
-				D4F58CDEB870ACB4312634AF /* FaceppTrainer.h in Headers */,
-				9A8A812858BFAACF59CF9B34 /* Pods-FaceppSDK-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2404F91BDDBDE7EFED31743 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6B3BD8303986A1EFE9AC2340 /* Pods-Alamofire-umbrella.h in Headers */,
+				D76B000B5FC7753C8813A744 /* Pods-Cartography-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1F2B9FB2D1F5E0A316F7467B /* Pods */ = {
+		32459E77480A3C165D3BA1C0 /* Pods-Alamofire */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2DE7F7332F5DD35B69905D37 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = A4E33B678FB5DFD550D1DD8C /* Build configuration list for PBXNativeTarget "Pods-Alamofire" */;
 			buildPhases = (
-				63A358B339098562C957333E /* Sources */,
-				C45698D675D5A321BF810D29 /* Frameworks */,
-				440B7C3EBC07F92335002252 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BDD5ED0142FCC8F4E9990611 /* PBXTargetDependency */,
-				7925B02D5A1A32846159B3AA /* PBXTargetDependency */,
-				D6C9FA21516B956F10AC3485 /* PBXTargetDependency */,
-			);
-			name = Pods;
-			productName = Pods;
-			productReference = DDD4ABA6251E6AD8E9205DD2 /* Pods.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		5A19AA8FBEEE2EE3DB7CE2C6 /* Pods-Cartography */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 837B82F92814E6CA249ADB8C /* Build configuration list for PBXNativeTarget "Pods-Cartography" */;
-			buildPhases = (
-				1EA0417A2860D7313DBD0283 /* Sources */,
-				74422F3D0826D836F8BEFB10 /* Frameworks */,
-				3B570AF64F797B0F89E3300D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-Cartography";
-			productName = "Pods-Cartography";
-			productReference = A762D7E52300CDDB04E04B87 /* Cartography.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		62DA72C6964D96B6AC69715F /* Pods-FaceppSDK */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F27FD9ABEF5F78A4092DBE60 /* Build configuration list for PBXNativeTarget "Pods-FaceppSDK" */;
-			buildPhases = (
-				B48726DC58C692FD36B91781 /* Sources */,
-				FB3E82C11CCB68D7A652FA47 /* Frameworks */,
-				AE6B166C35884CA95FFF1FEF /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-FaceppSDK";
-			productName = "Pods-FaceppSDK";
-			productReference = 09A2211671CAE34BB7B586E4 /* FaceppSDK.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		79F4C284DA1A62C29356C476 /* Pods-Alamofire */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C09A5A0B1C734AB33736CBAE /* Build configuration list for PBXNativeTarget "Pods-Alamofire" */;
-			buildPhases = (
-				4688D9F253359FB438FD63C1 /* Sources */,
-				17780D9C9998CF4F3D215E9E /* Frameworks */,
-				D2404F91BDDBDE7EFED31743 /* Headers */,
+				7ECA523F18CC5D3BAE50DA02 /* Sources */,
+				C819CB99CD415D866778E3FD /* Frameworks */,
+				98B419AC0C5ECE71D737140A /* Headers */,
 			);
 			buildRules = (
 			);
@@ -523,130 +322,287 @@
 			);
 			name = "Pods-Alamofire";
 			productName = "Pods-Alamofire";
-			productReference = 2E2BED31459AEAD182C306E0 /* Alamofire.framework */;
+			productReference = 63109BA62D6A6D548F852EA0 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		811630191D9B085844522719 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F641C391AE3FAB0C5378F674 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				71728AFDE6F9E68570507FE7 /* Sources */,
+				EC633A586113BEE40632782E /* Frameworks */,
+				C21B2E78A2932E337CAB84E1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BEE9277A8FB13025325BDD7 /* PBXTargetDependency */,
+				1CFE8EE54D149BE23A6A891A /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = CAFB53A856BD2E87C06B0557 /* Pods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A6EDFBEB5067869AA669802F /* Pods-Cartography */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 202795B05F5840C997813F29 /* Build configuration list for PBXNativeTarget "Pods-Cartography" */;
+			buildPhases = (
+				647C01A311E5981174659134 /* Sources */,
+				2BB45D2219E99070991A24DE /* Frameworks */,
+				CCDDD45DA12368893FE102B3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Cartography";
+			productName = "Pods-Cartography";
+			productReference = 3676770C56860F2FC52D47A3 /* Cartography.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9F90C397F6A87EAEFFA08252 /* Project object */ = {
+		773FEC82E8E2A266BDE70870 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = F29B09CBD1370C748AC1EC39 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = A2A10F8B2C298E25E41F3282 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 8AB202BB8F75D7327493B61D;
-			productRefGroup = E48EF4284DE87CB3C41E1225 /* Products */;
+			mainGroup = 92B6627859FA07869D142091;
+			productRefGroup = 0F9BD43E8EE55DDA7A7CAE5E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1F2B9FB2D1F5E0A316F7467B /* Pods */,
-				79F4C284DA1A62C29356C476 /* Pods-Alamofire */,
-				5A19AA8FBEEE2EE3DB7CE2C6 /* Pods-Cartography */,
-				62DA72C6964D96B6AC69715F /* Pods-FaceppSDK */,
+				811630191D9B085844522719 /* Pods */,
+				32459E77480A3C165D3BA1C0 /* Pods-Alamofire */,
+				A6EDFBEB5067869AA669802F /* Pods-Cartography */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1EA0417A2860D7313DBD0283 /* Sources */ = {
+		647C01A311E5981174659134 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				005C578A6F933AC6801176B5 /* Align.swift in Sources */,
-				6A9A96FA923735215079B3F1 /* Coefficients.swift in Sources */,
-				99AC135317F4E98DEC1BF60C /* Compound.swift in Sources */,
-				91D5330B28957D7755E3E6FB /* Constraint.swift in Sources */,
-				C95A07CCEE30E5F128FFE17B /* ConstraintGroup.swift in Sources */,
-				13B0B34E6B7277B877DF4FFA /* Context.swift in Sources */,
-				BF9E8268677BFD1F08C40650 /* Dimension.swift in Sources */,
-				3F38A7568830AB084D48B7C8 /* Distribute.swift in Sources */,
-				D4ADFF33F00F36FE5D05A276 /* Edge.swift in Sources */,
-				C28C418FA557BFC0C38E8C47 /* Edges.swift in Sources */,
-				E251C4F140926FFABF7E2EB0 /* Expression.swift in Sources */,
-				0B0D63028A34CBFFA1BBC61F /* Extensions.swift in Sources */,
-				A1DE38395BA507922740DE9B /* Layout.swift in Sources */,
-				2DDFFB8042788B54E344FB6D /* LayoutProxy.swift in Sources */,
-				F87C0F242D580BBBD381000B /* Pods-Cartography-dummy.m in Sources */,
-				35A7271F16262861B5893B5C /* Point.swift in Sources */,
-				4B7AF74120BCA3A0D53BD993 /* Priority.swift in Sources */,
-				89E62EBEF11AB53470579609 /* Property.swift in Sources */,
-				93B842605BFFFA2D8CFA39BD /* Size.swift in Sources */,
-				7F654F8FD743ECC4106569F5 /* View.swift in Sources */,
-				E4DCBFF288D9EE57E6BB8783 /* ViewUtils.swift in Sources */,
+				DE402A1F777DDFA2A0CF2159 /* Align.swift in Sources */,
+				B6FDF8959D1401F2D2F48D7C /* Coefficients.swift in Sources */,
+				D54DC680F2F752DE122A06BA /* Compound.swift in Sources */,
+				78555DC3FFFB5C7A3450B3FD /* Constraint.swift in Sources */,
+				2513D9836AE571E4A9D02D71 /* ConstraintGroup.swift in Sources */,
+				3024D071DEE88D64812A2DC8 /* Context.swift in Sources */,
+				DE3E19169452AE80A582F5C5 /* Dimension.swift in Sources */,
+				5C79CE4CB970CC66221E42B9 /* Distribute.swift in Sources */,
+				80212B06453FBA0615DDDDB5 /* Edge.swift in Sources */,
+				89AD164CAEE577085FC1EC1E /* Edges.swift in Sources */,
+				766FF97DF8308786A88808B0 /* Expression.swift in Sources */,
+				34C4A49B9F6DE7D7222D12FD /* Extensions.swift in Sources */,
+				3778160017830809670DD804 /* Layout.swift in Sources */,
+				19946A8809FF58C9CBD38B88 /* LayoutProxy.swift in Sources */,
+				785094718951D4950465E0DD /* Pods-Cartography-dummy.m in Sources */,
+				7F67E64C17A2E986DA9DDD13 /* Point.swift in Sources */,
+				76CA0BF35DCF977FCEFDE8A3 /* Priority.swift in Sources */,
+				92E6C060F693C45ED809BFE3 /* Property.swift in Sources */,
+				24F088FF3FACA5993BBCCA34 /* Size.swift in Sources */,
+				AFA6F35FC1747FC514607769 /* View.swift in Sources */,
+				7CD6B8A602B90E432B1E3A54 /* ViewUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4688D9F253359FB438FD63C1 /* Sources */ = {
+		71728AFDE6F9E68570507FE7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA413B56C0282BFE82468DC5 /* Alamofire.swift in Sources */,
-				65CDBCDEACD5009BD8745EFE /* Pods-Alamofire-dummy.m in Sources */,
+				DC7A68B3AF883684D799B912 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		63A358B339098562C957333E /* Sources */ = {
+		7ECA523F18CC5D3BAE50DA02 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DC3FEFEB65733DF5526FE0E /* Pods-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B48726DC58C692FD36B91781 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				80A018C6D9098C3E899B12E5 /* FaceppAPI.m in Sources */,
-				398A90CB86894A9F1B434C22 /* FaceppClient.m in Sources */,
-				FAAD0D85AA7A5D33E7C70147 /* FaceppDetection.m in Sources */,
-				264D1A850513E77B417862B2 /* FaceppError.m in Sources */,
-				2F6A5D18A5A343CE8D476E84 /* FaceppFaceset.m in Sources */,
-				6AFE1B5E232F074B8C9D0165 /* FaceppGroup.m in Sources */,
-				30BE400A2DF5EB434AA4AC57 /* FaceppGrouping.m in Sources */,
-				FEC8AA37052BB227CE899D57 /* FaceppInfo.m in Sources */,
-				58B4F958A06C15A7038F5BAE /* FaceppPerson.m in Sources */,
-				A44243F7152ED7C3E8CB077F /* FaceppRecognition.m in Sources */,
-				81E37B31EDC2BEFB899FA339 /* FaceppResult.m in Sources */,
-				B2B47694E18D953F812369EB /* FaceppTrainer.m in Sources */,
-				4711C33EB5FFDC04134BD7D2 /* Pods-FaceppSDK-dummy.m in Sources */,
+				694B52203F4757A27E9A0D30 /* Alamofire.swift in Sources */,
+				A79A7787E50CDEADC31BE42C /* Pods-Alamofire-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7925B02D5A1A32846159B3AA /* PBXTargetDependency */ = {
+		1CFE8EE54D149BE23A6A891A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Cartography";
-			target = 5A19AA8FBEEE2EE3DB7CE2C6 /* Pods-Cartography */;
-			targetProxy = 0EBB188245AA5015F13BBE8A /* PBXContainerItemProxy */;
+			target = A6EDFBEB5067869AA669802F /* Pods-Cartography */;
+			targetProxy = 6925CA3EFD29784E37CD46DA /* PBXContainerItemProxy */;
 		};
-		BDD5ED0142FCC8F4E9990611 /* PBXTargetDependency */ = {
+		4BEE9277A8FB13025325BDD7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Alamofire";
-			target = 79F4C284DA1A62C29356C476 /* Pods-Alamofire */;
-			targetProxy = BEE99E80C10594D64C5234A2 /* PBXContainerItemProxy */;
-		};
-		D6C9FA21516B956F10AC3485 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-FaceppSDK";
-			target = 62DA72C6964D96B6AC69715F /* Pods-FaceppSDK */;
-			targetProxy = CC7D76222196684302DE2310 /* PBXContainerItemProxy */;
+			target = 32459E77480A3C165D3BA1C0 /* Pods-Alamofire */;
+			targetProxy = 8DEC9F04930338D9472224B6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		193D0392CE701CB35FAF9B8C /* Debug */ = {
+		318361F1A130185F21B015F6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 017D6D5B020E07D3FAFDCB31 /* Pods-Alamofire-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		36228B41FC1E25F263F7C20F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F05B39A21DC90D41F2D3529 /* Pods.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4407A27E1A256E1ABAE6AD7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6508C4CCFAE8465FDD3011DA /* Pods-Cartography-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Cartography/Pods-Cartography-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Cartography/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Cartography/Pods-Cartography.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Cartography;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		67529131CB57E9D83B934924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6508C4CCFAE8465FDD3011DA /* Pods-Cartography-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Cartography/Pods-Cartography-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Cartography/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Cartography/Pods-Cartography.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Cartography;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6A40A432A278BDCE2E25FF65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9242EE6BEB614DD183DD6130 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		88ECADB5F05858240777F372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6A5EA889132B83140074A3E /* Pods-Alamofire-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -672,9 +628,9 @@
 			};
 			name = Debug;
 		};
-		1A7198C6F4C3FCFBCF20709D /* Release */ = {
+		CB1DD1184FFCCC99381D9565 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 017D6D5B020E07D3FAFDCB31 /* Pods-Alamofire-Private.xcconfig */;
+			baseConfigurationReference = D6A5EA889132B83140074A3E /* Pods-Alamofire-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -699,88 +655,7 @@
 			};
 			name = Release;
 		};
-		70A8118A4921E717B32F7735 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6EF6ACA4B3F3B954F1A7CA3 /* Pods-FaceppSDK-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-FaceppSDK/Pods-FaceppSDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-FaceppSDK/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-FaceppSDK/Pods-FaceppSDK.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = FaceppSDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		78AC8F5886CBDAEA6EA92016 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6EF6ACA4B3F3B954F1A7CA3 /* Pods-FaceppSDK-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-FaceppSDK/Pods-FaceppSDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-FaceppSDK/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-FaceppSDK/Pods-FaceppSDK.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = FaceppSDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		85D41D50BBA30E24D1D2B23D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 85093D9D303BD055E6634122 /* Pods-Cartography-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Cartography/Pods-Cartography-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Cartography/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Cartography/Pods-Cartography.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Cartography;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8FD3BE18E361A7B914658BFB /* Debug */ = {
+		E159E93175C12CAEE1F55DE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -819,176 +694,46 @@
 			};
 			name = Debug;
 		};
-		E01119D702EB444B8909DDC2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 85093D9D303BD055E6634122 /* Pods-Cartography-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Cartography/Pods-Cartography-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Cartography/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Cartography/Pods-Cartography.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Cartography;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		ED9640E33889ED858A3187FA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E210C36A4FF19026CB1196D /* Pods.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F41E649569B693A9BA1B6F5C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53CD75C671DD6F5BB20B53CB /* Pods.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F6786BBE82FB449BC64B3371 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2DE7F7332F5DD35B69905D37 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		202795B05F5840C997813F29 /* Build configuration list for PBXNativeTarget "Pods-Cartography" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ED9640E33889ED858A3187FA /* Debug */,
-				F41E649569B693A9BA1B6F5C /* Release */,
+				67529131CB57E9D83B934924 /* Debug */,
+				4407A27E1A256E1ABAE6AD7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		837B82F92814E6CA249ADB8C /* Build configuration list for PBXNativeTarget "Pods-Cartography" */ = {
+		A2A10F8B2C298E25E41F3282 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E01119D702EB444B8909DDC2 /* Debug */,
-				85D41D50BBA30E24D1D2B23D /* Release */,
+				E159E93175C12CAEE1F55DE5 /* Debug */,
+				318361F1A130185F21B015F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C09A5A0B1C734AB33736CBAE /* Build configuration list for PBXNativeTarget "Pods-Alamofire" */ = {
+		A4E33B678FB5DFD550D1DD8C /* Build configuration list for PBXNativeTarget "Pods-Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				193D0392CE701CB35FAF9B8C /* Debug */,
-				1A7198C6F4C3FCFBCF20709D /* Release */,
+				88ECADB5F05858240777F372 /* Debug */,
+				CB1DD1184FFCCC99381D9565 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F27FD9ABEF5F78A4092DBE60 /* Build configuration list for PBXNativeTarget "Pods-FaceppSDK" */ = {
+		F641C391AE3FAB0C5378F674 /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				70A8118A4921E717B32F7735 /* Debug */,
-				78AC8F5886CBDAEA6EA92016 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F29B09CBD1370C748AC1EC39 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8FD3BE18E361A7B914658BFB /* Debug */,
-				F6786BBE82FB449BC64B3371 /* Release */,
+				6A40A432A278BDCE2E25FF65 /* Debug */,
+				36228B41FC1E25F263F7C20F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9F90C397F6A87EAEFFA08252 /* Project object */;
+	rootObject = 773FEC82E8E2A266BDE70870 /* Project object */;
 }

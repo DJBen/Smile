@@ -18,6 +18,10 @@ class SmileIconView: UIView {
         return UIImage(named: "smile_icon_mouth_only")!
     }()
     
+    private static var SmileMouthOnlyInvertedImage: UIImage = {
+        return UIImage(named: "smile_icon_mouth_only_inv")!
+    }()
+    
     lazy var faceImageView: UIImageView = {
         let imageView = UIImageView(image: SmileIconView.SmileNoMouthImage)
         return imageView
@@ -27,6 +31,12 @@ class SmileIconView: UIView {
         let imageView = UIImageView(image: SmileIconView.SmileMouthOnlyImage)
         return imageView
     }()
+    
+    var smiling: Bool = true {
+        willSet {
+            mouthImageView.image = newValue ? SmileIconView.SmileMouthOnlyImage : SmileIconView.SmileMouthOnlyInvertedImage
+        }
+    }
     
     // MARK: - Runloop
     

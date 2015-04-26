@@ -25,6 +25,9 @@
 		F40628A81AE89F3F004F1E3B /* PhotoCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40628A71AE89F3F004F1E3B /* PhotoCaptureViewController.swift */; };
 		F48258431AECA0D800AF94D1 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48258421AECA0D800AF94D1 /* TutorialView.swift */; };
 		F48258451AECD8A200AF94D1 /* DiagnoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48258441AECD8A200AF94D1 /* DiagnoseViewController.swift */; };
+		F48258471AECDF8C00AF94D1 /* DetectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48258461AECDF8C00AF94D1 /* DetectionManager.swift */; };
+		F48258491AECE8EF00AF94D1 /* Face.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48258481AECE8EF00AF94D1 /* Face.swift */; };
+		F482584B1AED693000AF94D1 /* ImageStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F482584A1AED693000AF94D1 /* ImageStatusView.swift */; };
 		F4E16AB21AEA3C3F0071A584 /* FaceMouthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E16AB11AEA3C3F0071A584 /* FaceMouthView.swift */; };
 		F4F641E81AE992640092C98B /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F641E71AE992640092C98B /* TransitionManager.swift */; };
 		F4F641EA1AE9985A0092C98B /* Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F641E91AE9985A0092C98B /* Additions.swift */; };
@@ -70,6 +73,9 @@
 		F40628A71AE89F3F004F1E3B /* PhotoCaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureViewController.swift; sourceTree = "<group>"; };
 		F48258421AECA0D800AF94D1 /* TutorialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
 		F48258441AECD8A200AF94D1 /* DiagnoseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnoseViewController.swift; sourceTree = "<group>"; };
+		F48258461AECDF8C00AF94D1 /* DetectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetectionManager.swift; sourceTree = "<group>"; };
+		F48258481AECE8EF00AF94D1 /* Face.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Face.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F482584A1AED693000AF94D1 /* ImageStatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStatusView.swift; sourceTree = "<group>"; };
 		F4E16AB11AEA3C3F0071A584 /* FaceMouthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceMouthView.swift; sourceTree = "<group>"; };
 		F4F641E71AE992640092C98B /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 		F4F641E91AE9985A0092C98B /* Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Additions.swift; sourceTree = "<group>"; };
@@ -213,6 +219,7 @@
 				F4F641F31AEA16520092C98B /* FaceOutlineView.swift */,
 				F4E16AB11AEA3C3F0071A584 /* FaceMouthView.swift */,
 				F48258421AECA0D800AF94D1 /* TutorialView.swift */,
+				F482584A1AED693000AF94D1 /* ImageStatusView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -232,6 +239,8 @@
 			children = (
 				F4F641E71AE992640092C98B /* TransitionManager.swift */,
 				F406289A1AE837FC004F1E3B /* StyleManager.swift */,
+				F48258461AECDF8C00AF94D1 /* DetectionManager.swift */,
+				F48258481AECE8EF00AF94D1 /* Face.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -393,9 +402,12 @@
 			files = (
 				F48258451AECD8A200AF94D1 /* DiagnoseViewController.swift in Sources */,
 				F4F641E81AE992640092C98B /* TransitionManager.swift in Sources */,
+				F48258471AECDF8C00AF94D1 /* DetectionManager.swift in Sources */,
 				F4F641F41AEA16520092C98B /* FaceOutlineView.swift in Sources */,
+				F48258491AECE8EF00AF94D1 /* Face.swift in Sources */,
 				F40628931AE82BB2004F1E3B /* UIImage+OrientationFix.swift in Sources */,
 				F406289B1AE837FC004F1E3B /* StyleManager.swift in Sources */,
+				F482584B1AED693000AF94D1 /* ImageStatusView.swift in Sources */,
 				F40628A81AE89F3F004F1E3B /* PhotoCaptureViewController.swift in Sources */,
 				F4F641F01AE9CEAF0092C98B /* CameraPreviewView.swift in Sources */,
 				F40628751AE8192E004F1E3B /* IntroViewController.swift in Sources */,

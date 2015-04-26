@@ -3,4 +3,3 @@
 //
 
 #import "UIImage+SampleBuffer.h"
-#import <FaceppSDK/FaceppAPI.h>
