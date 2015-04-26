@@ -42,10 +42,10 @@
             </objects>
             <point key="canvasLocation" x="1165" y="388"/>
         </scene>
-        <!--View Controller-->
+        <!--Photo Capture View Controller-->
         <scene sceneID="fW5-x6-pS2">
             <objects>
-                <viewController id="eiE-gS-kev" sceneMemberID="viewController">
+                <viewController id="eiE-gS-kev" customClass="PhotoCaptureViewController" customModule="Smile" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uuR-Mi-M5A"/>
                         <viewControllerLayoutGuide type="bottom" id="u5g-Q8-Qn3"/>
@@ -56,10 +56,31 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="qC8-ZN-kd3"/>
+                    <connections>
+                        <segue destination="kHa-7z-AGl" kind="show" identifier="ProcessCapturesSegue" id="jKO-ym-abF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sB3-wX-3SR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1907" y="388"/>
+            <point key="canvasLocation" x="1901" y="388"/>
+        </scene>
+        <!--Diagnose View Controller-->
+        <scene sceneID="5qP-qv-d3n">
+            <objects>
+                <viewController id="kHa-7z-AGl" customClass="DiagnoseViewController" customModule="Smile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6z4-ko-4hR"/>
+                        <viewControllerLayoutGuide type="bottom" id="eGu-iP-4al"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uZo-ne-EB2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1iN-Ta-ajt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2621" y="388"/>
         </scene>
     </scenes>
 </document>

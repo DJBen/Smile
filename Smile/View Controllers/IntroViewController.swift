@@ -30,6 +30,7 @@ class IntroViewController: UIViewController, MockAlertViewDelegate {
         label.numberOfLines = 1
         label.textColor = UIColor.whiteColor()
         label.textAlignment = .Center
+        label.alpha = 0
         return label
     }()
     
@@ -43,6 +44,7 @@ class IntroViewController: UIViewController, MockAlertViewDelegate {
         label.lineBreakMode = .ByTruncatingTail
         label.textColor = UIColor.whiteColor()
         label.textAlignment = .Center
+        label.alpha = 0
         return label
     }()
     
@@ -132,28 +134,39 @@ class IntroViewController: UIViewController, MockAlertViewDelegate {
         return view
     }()
     
+    private(set) var presentedCameraPermissionRequest: Bool = false
+    
     private var separatorTopConstraint: NSLayoutConstraint!
     private var smileIconVerticalConstraint: NSLayoutConstraint!
     private var smileHeightConstraint: NSLayoutConstraint!
     private var textViewVerticalConstraint: NSLayoutConstraint!
     
-    // MARK: - Runloop
+    // MARK: - View Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViews()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        showWelcome()
         let delayTime = dispatch_time(DISPATCH_TIME_NOW,
-            Int64(1 * Double(NSEC_PER_SEC)))
+            Int64(2 * Double(NSEC_PER_SEC)))
         dispatch_after(delayTime, dispatch_get_main_queue()) {
-            self.presentText { _ in
-                let delayTime = dispatch_time(DISPATCH_TIME_NOW,
-                    Int64(2 * Double(NSEC_PER_SEC)))
-                dispatch_after(delayTime, dispatch_get_main_queue()) {
-                    self.mockAlertView.highlightRightButton()
+            if self.cameraAuthorized() {
+                self.handleGrantedAccess()
+            } else {
+                self.presentCameraPermissionRequest { _ in
+                    let delayTime = dispatch_time(DISPATCH_TIME_NOW,
+                        Int64(2 * Double(NSEC_PER_SEC)))
+                    dispatch_after(delayTime, dispatch_get_main_queue()) {
+                        self.mockAlertView.highlightRightButton()
+                    }
                 }
             }
+
         }
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -168,7 +181,25 @@ class IntroViewController: UIViewController, MockAlertViewDelegate {
     
     // MARK: - Private Methods
     
-    private func presentText(completion: ((complete: Bool) -> Void)? = nil) {
+    private func showWelcome(animated: Bool = true, duration: NSTimeInterval = 0.8) {
+        if !animated {
+            welcomeTextLabel.alpha = 1
+            subtitleTextLabel.alpha = 1
+            return
+        }
+        welcomeTextLabel.alpha = 0
+        subtitleTextLabel.alpha = 0
+        UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0, options: nil, animations: { () -> Void in
+            self.welcomeTextLabel.alpha = 1
+            self.subtitleTextLabel.alpha = 1
+        }, completion: nil)
+    }
+    
+    private func presentCameraPermissionRequest(completion: ((complete: Bool) -> Void)? = nil) {
+        if presentedCameraPermissionRequest {
+            return
+        }
+        presentedCameraPermissionRequest = true
         self.separatorTopConstraint.constant = 20
         self.smileHeightConstraint.constant = 50
         self.gradientBackgroundView.removeConstraint(self.smileIconVerticalConstraint)
@@ -217,6 +248,10 @@ class IntroViewController: UIViewController, MockAlertViewDelegate {
         }
     }
     
+    private func cameraAuthorized() -> Bool {
+        return AVCaptureDevice.authorizationStatusForMediaType(AVMediaTypeVideo) == .Authorized
+    }
+    
     private func handleDeniedAccess() {
         let alert = UIAlertController(title: "Cannot Access Camera", message: "You have denied this app from accessing the camera. Please go to Settings > Privacy > Camera and turn on \"Smile\".", preferredStyle: .Alert)
         alert.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: nil))
@@ -237,6 +272,15 @@ class IntroViewController: UIViewController, MockAlertViewDelegate {
     
     func alertRightButtonTapped(sender: UIButton) {
         authorizeCamera()
+    }
+    
+    // MARK: - Navigation
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == PhotoCaptureViewControllerSegueIdentifier {
+            let navVC = segue.destinationViewController as! UINavigationController
+            navVC.transitioningDelegate = TransitionManager.sharedManager
+        }
     }
 }
 

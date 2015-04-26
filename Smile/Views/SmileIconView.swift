@@ -67,11 +67,9 @@ class SmileIconView: UIView {
             self.transform = CGAffineTransformMakeScale(1, 1)
             return
         }
-        var transform = CGAffineTransformMakeScale(0, 0)
-        self.transform = transform
+        self.transform = CGAffineTransformMakeScale(0.001, 0.001)
         UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0, options: nil, animations: { () -> Void in
-            transform = CGAffineTransformMakeScale(1, 1)
-            self.transform = transform
+            self.transform = CGAffineTransformMakeScale(1, 1)
         }, completion: nil)
     }
     
@@ -80,11 +78,9 @@ class SmileIconView: UIView {
             self.transform = CGAffineTransformMakeScale(0, 0)
             return
         }
-        var transform = CGAffineTransformMakeScale(1, 1)
-        self.transform = transform
+        self.transform = CGAffineTransformMakeScale(1, 1)
         UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0, options: nil, animations: { () -> Void in
-            transform = CGAffineTransformMakeScale(0, 0)
-            self.transform = transform
+            self.transform = CGAffineTransformMakeScale(0.001, 0.001)
         }, completion: nil)
     }
     

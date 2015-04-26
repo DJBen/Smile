@@ -1,13 +1,16 @@
 PODS:
   - Alamofire (1.2.1)
   - Cartography (0.5.0)
+  - FaceppSDK (2.0.0)
 
 DEPENDENCIES:
   - Alamofire
   - Cartography
+  - FaceppSDK (~> 2.0.0)
 
 SPEC CHECKSUMS:
   Alamofire: 1acfdf179aff68b41a48dff70c1ac7fa263e2bcb
   Cartography: 774e5cc446f5a6bca5d4345c5aa6af9a1fe74dc6
+  FaceppSDK: c83bcadb7bbc512a3bb792f3cda407e14e0208b1
 
 COCOAPODS: 0.36.3

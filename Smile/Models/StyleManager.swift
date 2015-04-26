@@ -1,6 +1,6 @@
 //
 //  StyleManager.swift
-//  XPrize-v3
+//  Smile
 //
 //  Created by Sihao Lu on 1/13/15.
 //  Copyright (c) 2015 DJ.Ben. All rights reserved.
@@ -18,7 +18,7 @@ class StyleManager: NSObject {
         return Static.instance
     }
     
-    enum XPrizeColor: CGFloat {
+    enum SmileColor: CGFloat {
         case Blue = 200
         case Green = 130
         case Red = 5
@@ -29,31 +29,31 @@ class StyleManager: NSObject {
     
 }
 
-private var xPrizeImageCache = [CGFloat: UIImage]()
+private var smileImageCache: [CGFloat: UIImage] = [CGFloat: UIImage]()
 
 extension UIImage {
-    class func imageFromXPrizeColor(color: StyleManager.XPrizeColor) -> UIImage {
-        if let image = xPrizeImageCache[color.rawValue] {
+    class func imageFromSmileColor(color: StyleManager.SmileColor) -> UIImage {
+        if let image = smileImageCache[color.rawValue] {
             return image
         } else {
             UIGraphicsBeginImageContext(CGSize(width: 1, height: 1))
-            UIColor.XPrizeColor(color).set()
+            UIColor.SmileColor(color).set()
             let context = UIGraphicsGetCurrentContext()
             CGContextStrokeRect(context, CGRectMake(0, 0, 1, 1))
             let image = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()
-            xPrizeImageCache[color.rawValue] = image
+            smileImageCache[color.rawValue] = image
             return image
         }
     }
 }
 
 extension UIColor {
-    class func XPrizeColor(color: StyleManager.XPrizeColor) -> UIColor {
-        return UIColor(hue: color.rawValue / 360.0, saturation: 0.7, brightness: 0.9, alpha: 1)
+    class func SmileColor(color: StyleManager.SmileColor) -> UIColor {
+        return UIColor(hue: color.rawValue / 360.0, saturation: 0.7, brightness: 0.88, alpha: 1)
     }
     
-    class func randomXPrizeColor() -> UIColor {
+    class func randomSmileColor() -> UIColor {
         return UIColor(hue: CGFloat(arc4random_uniform(360)) / 360.0, saturation: 0.7, brightness: 0.9, alpha: 1)
     }
     
@@ -66,7 +66,7 @@ extension UIColor {
         return UIColor(hue: hue, saturation: saturation, brightness: min(255.0, brightness * factor), alpha: alpha)
     }
     
-    class func XPrizeColorWithPercentage(percentage: Double, gradientStart: CGFloat, gradientEnd: CGFloat, reversed: Bool = false) -> UIColor {
+    class func SmileColorWithPercentage(percentage: Double, gradientStart: CGFloat, gradientEnd: CGFloat, reversed: Bool = false) -> UIColor {
         let difference = abs(Double(gradientEnd - gradientStart))
         let adjustedPercentage = max(min(1.0, percentage), 0.0)
         let offset = difference * percentage

@@ -1,0 +1,6 @@
+framework module FaceppSDK {
+  umbrella header "Pods-FaceppSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

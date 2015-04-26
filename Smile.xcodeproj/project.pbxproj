@@ -23,6 +23,15 @@
 		F40628A41AE855C7004F1E3B /* FreigSanProSem.otf in Resources */ = {isa = PBXBuildFile; fileRef = F40628991AE83703004F1E3B /* FreigSanProSem.otf */; };
 		F40628A61AE88390004F1E3B /* MockAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40628A51AE88390004F1E3B /* MockAlertView.swift */; };
 		F40628A81AE89F3F004F1E3B /* PhotoCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40628A71AE89F3F004F1E3B /* PhotoCaptureViewController.swift */; };
+		F48258431AECA0D800AF94D1 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48258421AECA0D800AF94D1 /* TutorialView.swift */; };
+		F48258451AECD8A200AF94D1 /* DiagnoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48258441AECD8A200AF94D1 /* DiagnoseViewController.swift */; };
+		F4E16AB21AEA3C3F0071A584 /* FaceMouthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E16AB11AEA3C3F0071A584 /* FaceMouthView.swift */; };
+		F4F641E81AE992640092C98B /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F641E71AE992640092C98B /* TransitionManager.swift */; };
+		F4F641EA1AE9985A0092C98B /* Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F641E91AE9985A0092C98B /* Additions.swift */; };
+		F4F641EE1AE99DE10092C98B /* UIImage+SampleBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F641ED1AE99DE10092C98B /* UIImage+SampleBuffer.m */; };
+		F4F641F01AE9CEAF0092C98B /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F641EF1AE9CEAF0092C98B /* CameraPreviewView.swift */; };
+		F4F641F21AE9E5A00092C98B /* CameraFocusIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F641F11AE9E5A00092C98B /* CameraFocusIndicatorView.swift */; };
+		F4F641F41AEA16520092C98B /* FaceOutlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F641F31AEA16520092C98B /* FaceOutlineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +68,17 @@
 		F406289F1AE84432004F1E3B /* SmileIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmileIconView.swift; sourceTree = "<group>"; };
 		F40628A51AE88390004F1E3B /* MockAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockAlertView.swift; sourceTree = "<group>"; };
 		F40628A71AE89F3F004F1E3B /* PhotoCaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureViewController.swift; sourceTree = "<group>"; };
+		F48258421AECA0D800AF94D1 /* TutorialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
+		F48258441AECD8A200AF94D1 /* DiagnoseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnoseViewController.swift; sourceTree = "<group>"; };
+		F4E16AB11AEA3C3F0071A584 /* FaceMouthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceMouthView.swift; sourceTree = "<group>"; };
+		F4F641E71AE992640092C98B /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		F4F641E91AE9985A0092C98B /* Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Additions.swift; sourceTree = "<group>"; };
+		F4F641EB1AE99DE00092C98B /* Smile-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smile-Bridging-Header.h"; sourceTree = "<group>"; };
+		F4F641EC1AE99DE10092C98B /* UIImage+SampleBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SampleBuffer.h"; sourceTree = "<group>"; };
+		F4F641ED1AE99DE10092C98B /* UIImage+SampleBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SampleBuffer.m"; sourceTree = "<group>"; };
+		F4F641EF1AE9CEAF0092C98B /* CameraPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
+		F4F641F11AE9E5A00092C98B /* CameraFocusIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraFocusIndicatorView.swift; sourceTree = "<group>"; };
+		F4F641F31AEA16520092C98B /* FaceOutlineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceOutlineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +142,9 @@
 			isa = PBXGroup;
 			children = (
 				F40628721AE8192E004F1E3B /* AppDelegate.swift */,
-				F40628A91AE89F46004F1E3B /* View Controllers */,
+				F4F641E61AE9922F0092C98B /* Models */,
 				F406289E1AE8441D004F1E3B /* Views */,
+				F40628A91AE89F46004F1E3B /* View Controllers */,
 				F40628941AE82BC0004F1E3B /* Tools */,
 				F40628761AE8192E004F1E3B /* Main.storyboard */,
 				F40628791AE8192E004F1E3B /* Images.xcassets */,
@@ -136,6 +157,7 @@
 		F40628701AE8192E004F1E3B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F4F641EB1AE99DE00092C98B /* Smile-Bridging-Header.h */,
 				F40628951AE836C9004F1E3B /* Assets */,
 				F40628711AE8192E004F1E3B /* Info.plist */,
 			);
@@ -162,8 +184,10 @@
 		F40628941AE82BC0004F1E3B /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				F406289A1AE837FC004F1E3B /* StyleManager.swift */,
 				F40628921AE82BB2004F1E3B /* UIImage+OrientationFix.swift */,
+				F4F641E91AE9985A0092C98B /* Additions.swift */,
+				F4F641EC1AE99DE10092C98B /* UIImage+SampleBuffer.h */,
+				F4F641ED1AE99DE10092C98B /* UIImage+SampleBuffer.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -184,6 +208,11 @@
 			children = (
 				F406289F1AE84432004F1E3B /* SmileIconView.swift */,
 				F40628A51AE88390004F1E3B /* MockAlertView.swift */,
+				F4F641EF1AE9CEAF0092C98B /* CameraPreviewView.swift */,
+				F4F641F11AE9E5A00092C98B /* CameraFocusIndicatorView.swift */,
+				F4F641F31AEA16520092C98B /* FaceOutlineView.swift */,
+				F4E16AB11AEA3C3F0071A584 /* FaceMouthView.swift */,
+				F48258421AECA0D800AF94D1 /* TutorialView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,8 +222,18 @@
 			children = (
 				F40628741AE8192E004F1E3B /* IntroViewController.swift */,
 				F40628A71AE89F3F004F1E3B /* PhotoCaptureViewController.swift */,
+				F48258441AECD8A200AF94D1 /* DiagnoseViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F4F641E61AE9922F0092C98B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F4F641E71AE992640092C98B /* TransitionManager.swift */,
+				F406289A1AE837FC004F1E3B /* StyleManager.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,11 +391,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48258451AECD8A200AF94D1 /* DiagnoseViewController.swift in Sources */,
+				F4F641E81AE992640092C98B /* TransitionManager.swift in Sources */,
+				F4F641F41AEA16520092C98B /* FaceOutlineView.swift in Sources */,
 				F40628931AE82BB2004F1E3B /* UIImage+OrientationFix.swift in Sources */,
 				F406289B1AE837FC004F1E3B /* StyleManager.swift in Sources */,
 				F40628A81AE89F3F004F1E3B /* PhotoCaptureViewController.swift in Sources */,
+				F4F641F01AE9CEAF0092C98B /* CameraPreviewView.swift in Sources */,
 				F40628751AE8192E004F1E3B /* IntroViewController.swift in Sources */,
+				F4E16AB21AEA3C3F0071A584 /* FaceMouthView.swift in Sources */,
+				F48258431AECA0D800AF94D1 /* TutorialView.swift in Sources */,
+				F4F641F21AE9E5A00092C98B /* CameraFocusIndicatorView.swift in Sources */,
+				F4F641EE1AE99DE10092C98B /* UIImage+SampleBuffer.m in Sources */,
 				F40628A01AE84432004F1E3B /* SmileIconView.swift in Sources */,
+				F4F641EA1AE9985A0092C98B /* Additions.swift in Sources */,
 				F40628731AE8192E004F1E3B /* AppDelegate.swift in Sources */,
 				F40628A61AE88390004F1E3B /* MockAlertView.swift in Sources */,
 			);
@@ -486,9 +534,12 @@
 			baseConfigurationReference = 192F56E75233CC6B23D8ACCC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Smile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Smile/Smile-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -497,9 +548,11 @@
 			baseConfigurationReference = 363EC871C32F95363942CAA7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Smile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Smile/Smile-Bridging-Header.h";
 			};
 			name = Release;
 		};
