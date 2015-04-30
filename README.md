@@ -1,6 +1,6 @@
 # README
 
-# Stroke Detector
+## Stroke Detector
 
 This app detects whether you have stroke by analyzing your smile and the fact that stroke patient ususally has his/her mouth droop to one side. It essentially draws two lines, one between your eyes and the another between the left and right edges of your mouth. If the slopes of the two lines differ more than a threshold, it concludes that your mouth droops to one side and you are under risk of having a stroke.
 
