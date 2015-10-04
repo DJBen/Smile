@@ -8,13 +8,13 @@
 
 import UIKit
 
-class Face: NSObject, Printable {
+class Face: NSObject {
     enum StrokeStatus: String {
         case Positive = "Positive"
         case Negative = "Negative"
     }
     
-    struct Positions: Printable {
+    struct Positions: CustomStringConvertible {
         let leftEye: CGPoint
         let rightEye: CGPoint
         let mouthLeftEdge: CGPoint
@@ -102,13 +102,13 @@ class Face: NSObject, Printable {
                     positions = Positions(leftEye: eyeLeft, rightEye: eyeRight, mouthLeftEdge: mouthLeft, mouthRightEdge: mouthRight)
                     super.init()
                 } else {
-                    println("Parse face: error 1")
+                    print("Parse face: error 1")
                     positions = Positions()
                     super.init()
                     return nil
                 }
             } else {
-                println("Parse face: error 2")
+                print("Parse face: error 2")
                 age = 0
                 ageRange = 0
                 smiling = 0
@@ -117,7 +117,7 @@ class Face: NSObject, Printable {
                 return nil
             }
         } else {
-            println("3")
+            print("3")
             age = 0
             ageRange = 0
             smiling = 0

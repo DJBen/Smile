@@ -33,7 +33,7 @@ import Cartography
         configureView()
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         configureView()
     }
@@ -42,7 +42,7 @@ import Cartography
         let context = UIGraphicsGetCurrentContext()
         CGContextSetLineWidth(context, lineWidth)
         CGContextSetStrokeColorWithColor(context, lineColor.CGColor)
-        CGContextSetLineJoin(context, kCGLineJoinRound)
+        CGContextSetLineJoin(context, CGLineJoin.Round)
         let leftPath = CGPathCreateMutable()
         CGPathMoveToPoint(leftPath, nil, bounds.width * 0.3, bounds.height * 0.15)
         CGPathAddCurveToPoint(leftPath, nil, bounds.width * 0.15, bounds.height * 0.2, bounds.width * 0.1, bounds.height * 0.35, bounds.width * 0.1, bounds.height * 0.5)
@@ -64,11 +64,11 @@ import Cartography
         alpha = 0
         transform = CGAffineTransformMakeScale(2, 2)
         self.mouthView.alpha = 0
-        UIView.animateWithDuration(duration * 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: nil, animations: { () -> Void in
+        UIView.animateWithDuration(duration * 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: [], animations: { () -> Void in
             self.transform = CGAffineTransformIdentity
             self.alpha = 1
         }) { (_) -> Void in
-            UIView.animateWithDuration(duration * 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: nil, animations: { () -> Void in
+            UIView.animateWithDuration(duration * 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: [], animations: { () -> Void in
                 self.mouthView.alpha = 1
             }, completion: nil)
         }
@@ -89,7 +89,7 @@ import Cartography
         backgroundColor = UIColor.clearColor()
         
         addSubview(mouthView)
-        layout(mouthView) { v in
+        constrain(mouthView) { v in
             v.width == 170
             v.height == v.width * 0.55
             v.centerX == v.superview!.centerX

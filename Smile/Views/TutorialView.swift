@@ -80,7 +80,7 @@ class TutorialView: UIView {
         configureView()
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         configureView()
     }
@@ -92,17 +92,17 @@ class TutorialView: UIView {
     // MARK: - Private Methods
     private func configureView() {
         userInteractionEnabled = true
-        let responseButton: UIButton = UIButton.buttonWithType(.Custom) as! UIButton
+        let responseButton: UIButton = UIButton(type: .Custom)
         responseButton.backgroundColor = UIColor.clearColor()
         responseButton.addTarget(self, action: "dismissView:", forControlEvents: .TouchUpInside)
         
         addSubview(blurView)
-        layout(blurView) { v in
+        constrain(blurView) { v in
             v.edges == v.superview!.edges
         }
         
         addSubview(responseButton)
-        layout(responseButton) { v in
+        constrain(responseButton) { v in
             v.edges == v.superview!.edges
         }
         
@@ -127,19 +127,19 @@ class TutorialView: UIView {
             r.centerX == r.superview!.centerX
         }
         
-        layout(upperVibrantView, focusRingView, lowerVibrantView) { uv, r, bv in
+        constrain(upperVibrantView, focusRingView, lowerVibrantView) { uv, r, bv in
             bv.top == r.bottom + 35
             bv.leftMargin == uv.leftMargin
             bv.rightMargin == uv.rightMargin
         }
         
         upperVibrantView.contentView.addSubview(tutorialLabel)
-        layout(tutorialLabel) { v in
+        constrain(tutorialLabel) { v in
             v.edges == v.superview!.edges
         }
         
         lowerVibrantView.contentView.addSubview(secondTutorialLabel)
-        layout(secondTutorialLabel) { v in
+        constrain(secondTutorialLabel) { v in
             v.edges == v.superview!.edges
         }
 

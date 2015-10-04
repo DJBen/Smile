@@ -33,7 +33,7 @@ class CameraFocusIndicatorView: UIView {
         configureView()
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         configureView()
     }
@@ -46,19 +46,19 @@ class CameraFocusIndicatorView: UIView {
         self.transform = CGAffineTransformIdentity
         let normalizedDurations: [NSTimeInterval] = CameraFocusIndicatorView.normalizeDurations([1, 8, 3, 2, 4], totalDuration: duration)
         self.alpha = 0
-        UIView.animateWithDuration(normalizedDurations[0], delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: nil, animations: { () -> Void in
+        UIView.animateWithDuration(normalizedDurations[0], delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: [], animations: { () -> Void in
             self.alpha = 1
         }) { (_) -> Void in
             self.outerRing.alpha = 1
-            UIView.animateWithDuration(normalizedDurations[1], delay: 0, usingSpringWithDamping: 0.85, initialSpringVelocity: 0, options: nil, animations: { () -> Void in
+            UIView.animateWithDuration(normalizedDurations[1], delay: 0, usingSpringWithDamping: 0.85, initialSpringVelocity: 0, options: [], animations: { () -> Void in
                 // Constract outer ring
                 transform = CGAffineTransformIdentity
                 self.outerRing.transform = transform
             }, completion: { (_) -> Void in
-                UIView.animateWithDuration(normalizedDurations[2], delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: nil, animations: { () -> Void in
+                UIView.animateWithDuration(normalizedDurations[2], delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: [], animations: { () -> Void in
                     self.outerRing.alpha = 0
                 }, completion: { (_) -> Void in
-                    UIView.animateWithDuration(normalizedDurations[4], delay: normalizedDurations[3], usingSpringWithDamping: 1, initialSpringVelocity: 0, options: nil, animations: { () -> Void in
+                    UIView.animateWithDuration(normalizedDurations[4], delay: normalizedDurations[3], usingSpringWithDamping: 1, initialSpringVelocity: 0, options: [], animations: { () -> Void in
                         self.transform = CGAffineTransformMakeScale(1.2, 1.2)
                         self.alpha = 0
                     }, completion: completion)
@@ -72,7 +72,7 @@ class CameraFocusIndicatorView: UIView {
         self.outerRing.alpha = 1
         self.outerRing.transform = CGAffineTransformMakeScale(outerRingSizeRatio, outerRingSizeRatio)
         let normalizedDurations: [NSTimeInterval] = CameraFocusIndicatorView.normalizeDurations([1, 3], totalDuration: duration)
-        UIView.animateWithDuration(normalizedDurations[0], delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: nil, animations: {
+        UIView.animateWithDuration(normalizedDurations[0], delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: [], animations: {
             self.alpha = 1
         }) { (_) -> Void in
             UIView.animateWithDuration(normalizedDurations[1], delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: UIViewAnimationOptions.Repeat, animations: { () -> Void in
@@ -94,7 +94,7 @@ class CameraFocusIndicatorView: UIView {
         alpha = 0
         addSubview(outerRing)
         addSubview(innerRing)
-        layout(innerRing, outerRing) { i, o in
+        constrain(innerRing, outerRing) { i, o in
             o.edges == inset(o.superview!.edges, -1)
             i.edges == i.superview!.edges
         }

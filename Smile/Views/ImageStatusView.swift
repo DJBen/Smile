@@ -94,7 +94,7 @@ class ImageStatusView: UIView {
     lazy var smileView: SmileIconView = {
         let view = SmileIconView()
         view.tintColor = UIColor.whiteColor()
-        view.disappear(animated: false)
+        view.disappear(false)
         return view
     }()
     
@@ -110,8 +110,8 @@ class ImageStatusView: UIView {
                 progressCoverView.removeConstraint(progressHeightConstraint!)
                 removeConstraint(progressHeightConstraint!)
             }
-            layout(progressCoverView) { p in
-                self.progressHeightConstraint = (p.height == p.superview!.height * (1 - newValue))
+            constrain(progressCoverView) { p in
+                self.progressHeightConstraint = (p.height == p.superview!.height * (1 - CGFloat(newValue)))
             }
         }
     }
@@ -123,7 +123,7 @@ class ImageStatusView: UIView {
         configureView()
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         configureView()
     }
@@ -140,14 +140,14 @@ class ImageStatusView: UIView {
         constrain(imageView, progressCoverView) { i, p in
             i.edges == i.superview!.edges
             if self.progressHeightConstraint == nil {
-                self.progressHeightConstraint = (p.height == p.superview!.height * self.progress)
+                self.progressHeightConstraint = (p.height == p.superview!.height * CGFloat(self.progress))
             }
             p.left == p.superview!.left
             p.right == p.superview!.right
             p.top == p.superview!.top
         }
         
-        layout(smileView, statusTextLabel) { s, t in
+        constrain(smileView, statusTextLabel) { s, t in
             s.center == s.superview!.center
             s.width == s.height
             s.width == 48

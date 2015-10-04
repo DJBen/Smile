@@ -23,6 +23,18 @@ class DiagnoseViewController: UIViewController {
         return view
     }()
     
+    lazy var call911Button: UIButton = {
+        let button = UIButton(type: .System)
+        button.setTitle("Call 911", forState: .Normal)
+        button.addTarget(self, action: "call911:", forControlEvents: .TouchUpInside)
+        button.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        button.backgroundColor = UIColor.SmileColor(.Red)
+        button.hidden = true
+        button.layer.cornerRadius = 7
+        button.titleLabel?.font = UIFont.freightSansFontWithStyle(.Book, size: 20)
+        return button
+    }()
+    
     lazy var scrollView: UIScrollView = {
         let view = UIScrollView(frame: CGRectMake(0, 0, 1000, 1000))
         view.showsHorizontalScrollIndicator = false
@@ -47,7 +59,7 @@ class DiagnoseViewController: UIViewController {
     }()
     
     lazy var homeButton: UIButton = {
-        let button = UIButton.buttonWithType(.System) as! UIButton
+        let button = UIButton(type: .System)
         button.setTitle("Home", forState: .Normal)
         button.titleLabel!.font = UIFont.freightSansFontWithStyle(.Book, size: 22)
         button.addTarget(self, action: "homeButtonTapped:", forControlEvents: .TouchUpInside)
@@ -102,9 +114,13 @@ class DiagnoseViewController: UIViewController {
         performSegueWithIdentifier(UnwindFromDiagnosisSegueIdentifier, sender: self)
     }
     
+    func call911(sender: UIButton) {
+        UIApplication.sharedApplication().openURL(NSURL(string: "tel:911")!)
+    }
+    
     func retryTapped(sender: UIButton) {
         let index = sender.tag
-        println("Retry at \(index) tapped.")
+        print("Retry at \(index) tapped.")
         if let face = faces[index] where face.isDummy {
             if let request = requests[index] {
                 request.cancel()
@@ -116,7 +132,8 @@ class DiagnoseViewController: UIViewController {
     // MARK: - Private Methods
     
     private func analyzeFaces() {
-        for (i, image) in enumerate(capturedImages) {
+        call911Button.hidden = true
+        for (i, image) in capturedImages.enumerate() {
             analyzeFaceAtIndex(i, image: image)
         }
     }
@@ -133,7 +150,7 @@ class DiagnoseViewController: UIViewController {
                     if let theFaces = faces where !theFaces.isEmpty {
                         let face = theFaces[0]
                         self.imageStatusViews[tag].status = .ResultReady(face.result)
-                        println("Distortion: \(face.distortion)")
+                        print("Distortion: \(face.distortion)")
                         self.faces[tag] = face
                     } else {
                         self.imageStatusViews[tag].status = .Error
@@ -150,7 +167,7 @@ class DiagnoseViewController: UIViewController {
     }
     
     private func cancelUploading() {
-        for (i, request) in requests {
+        for (_, request) in requests {
             request.cancel()
         }
     }
@@ -192,9 +209,11 @@ class DiagnoseViewController: UIViewController {
         if positiveCount >= negativeCount {
 //            resultLabel.textColor = UIColor.SmileColor(.Red)
             resultLabel.text = "You may be under risk of having a stroke. Contact your doctor, and call emergency services if necessary."
+            call911Button.hidden = false
         } else {
 //            resultLabel.textColor = UIColor.SmileColor(.Green)
             resultLabel.text = "Great! It seems you don't have a stroke."
+            call911Button.hidden = true
         }
     }
     
@@ -208,14 +227,16 @@ class DiagnoseViewController: UIViewController {
         view.addSubview(scrollView)
         view.addSubview(blurView)
         view.addSubview(resultLabel)
+        view.addSubview(call911Button)
+        
         blurView.contentView.addSubview(vibrantView)
         vibrantView.contentView.addSubview(homeButton)
         
-        layout(homeButton) { v in
+        constrain(homeButton) { v in
             v.edges == v.superview!.edges
         }
         
-        layout(vibrantView) { v in
+        constrain(vibrantView) { v in
             v.edges == v.superview!.edges
         }
         
@@ -231,9 +252,16 @@ class DiagnoseViewController: UIViewController {
             r.bottom == v.top - 20
         }
         
+        constrain(call911Button, blurView) { c, b in
+            c.bottom == b.top - 20
+            c.width == 130
+            c.height == 40
+            c.centerX == c.superview!.centerX
+        }
+        
         view.addConstraint(NSLayoutConstraint(item: scrollView, attribute: .Top, relatedBy: .Equal, toItem: topLayoutGuide, attribute: .Bottom, multiplier: 1, constant: 40))
         
-        layout(backgroundImageView, scrollView) { b, s in
+        constrain(backgroundImageView, scrollView) { b, s in
             b.edges == b.superview!.edges
             s.left == s.superview!.left
             s.right == s.superview!.right
@@ -256,12 +284,12 @@ class DiagnoseViewController: UIViewController {
         let interspacing: CGFloat = 16
         let height = width * 1280 / 720
         scrollView.contentSize = CGSizeMake(width * CGFloat(capturedImages.count) + interspacing * CGFloat(capturedImages.count - 1), height)
-        for (i, image) in enumerate(capturedImages) {
+        for (i, image) in capturedImages.enumerate() {
             let imageStatusView = ImageStatusView(frame: CGRectMake(CGFloat(i) * (width + interspacing), 0, width, height))
             scrollView.addSubview(imageStatusView)
             imageStatusView.image = image
             imageStatusViews.append(imageStatusView)
-            let retryButton = UIButton.buttonWithType(.Custom) as! UIButton
+            let retryButton = UIButton(type: .Custom)
             retryButton.backgroundColor = UIColor.clearColor()
             retryButton.frame = imageStatusView.frame
             retryButton.tag = i

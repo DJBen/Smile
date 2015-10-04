@@ -45,7 +45,7 @@ class SmileIconView: UIView {
         configureView()
     }
 
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         configureView()
     }
@@ -55,15 +55,15 @@ class SmileIconView: UIView {
     func shakeMouth(duration: NSTimeInterval = 0.8) {
         var transform = CGAffineTransformIdentity
         mouthImageView.transform = transform
-        UIView.animateWithDuration(duration * 0.25, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.5, options: nil, animations: { () -> Void in
+        UIView.animateWithDuration(duration * 0.25, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.5, options: [], animations: { () -> Void in
             transform = CGAffineTransformRotate(transform, CGFloat(M_PI / 6))
             self.mouthImageView.transform = transform
         }) { (completion) -> Void in
-            UIView.animateWithDuration(duration * 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0.5, options: nil, animations: { () -> Void in
+            UIView.animateWithDuration(duration * 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0.5, options: [], animations: { () -> Void in
                 transform = CGAffineTransformRotate(transform, CGFloat(-M_PI / 3))
                 self.mouthImageView.transform = transform
             }) { (completion) -> Void in
-                UIView.animateWithDuration(duration * 0.25, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: -0.5, options: nil, animations: { () -> Void in
+                UIView.animateWithDuration(duration * 0.25, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: -0.5, options: [], animations: { () -> Void in
                     transform = CGAffineTransformRotate(transform, CGFloat(M_PI / 6))
                     self.mouthImageView.transform = transform
                 }) { (completion) -> Void in
@@ -78,7 +78,7 @@ class SmileIconView: UIView {
             return
         }
         self.transform = CGAffineTransformMakeScale(0.001, 0.001)
-        UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0, options: nil, animations: { () -> Void in
+        UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0, options: [], animations: { () -> Void in
             self.transform = CGAffineTransformMakeScale(1, 1)
         }, completion: nil)
     }
@@ -89,7 +89,7 @@ class SmileIconView: UIView {
             return
         }
         self.transform = CGAffineTransformMakeScale(1, 1)
-        UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0, options: nil, animations: { () -> Void in
+        UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0, options: [], animations: { () -> Void in
             self.transform = CGAffineTransformMakeScale(0.001, 0.001)
         }, completion: nil)
     }
@@ -99,7 +99,7 @@ class SmileIconView: UIView {
     private func configureView() {
         addSubview(faceImageView)
         addSubview(mouthImageView)
-        layout(faceImageView, mouthImageView) { f, m in
+        constrain(faceImageView, mouthImageView) { f, m in
             f.edges == f.superview!.edges
             m.edges == m.superview!.edges
         }

@@ -13,7 +13,6 @@
 		F40628781AE8192E004F1E3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F40628761AE8192E004F1E3B /* Main.storyboard */; };
 		F406287A1AE8192E004F1E3B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F40628791AE8192E004F1E3B /* Images.xcassets */; };
 		F406287D1AE8192E004F1E3B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F406287B1AE8192E004F1E3B /* LaunchScreen.xib */; };
-		F40628891AE8192F004F1E3B /* SmileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40628881AE8192F004F1E3B /* SmileTests.swift */; };
 		F40628931AE82BB2004F1E3B /* UIImage+OrientationFix.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40628921AE82BB2004F1E3B /* UIImage+OrientationFix.swift */; };
 		F406289B1AE837FC004F1E3B /* StyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406289A1AE837FC004F1E3B /* StyleManager.swift */; };
 		F40628A01AE84432004F1E3B /* SmileIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406289F1AE84432004F1E3B /* SmileIconView.swift */; };
@@ -37,16 +36,6 @@
 		F4F641F41AEA16520092C98B /* FaceOutlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F641F31AEA16520092C98B /* FaceOutlineView.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		F40628831AE8192F004F1E3B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F40628651AE8192E004F1E3B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F406286C1AE8192E004F1E3B;
-			remoteInfo = Smile;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		192F56E75233CC6B23D8ACCC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		363EC871C32F95363942CAA7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -58,9 +47,6 @@
 		F40628771AE8192E004F1E3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F40628791AE8192E004F1E3B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F406287C1AE8192E004F1E3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		F40628821AE8192F004F1E3B /* SmileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F40628871AE8192F004F1E3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F40628881AE8192F004F1E3B /* SmileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileTests.swift; sourceTree = "<group>"; };
 		F40628921AE82BB2004F1E3B /* UIImage+OrientationFix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+OrientationFix.swift"; sourceTree = "<group>"; };
 		F40628961AE83703004F1E3B /* FreigSanProBook.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FreigSanProBook.otf; sourceTree = "<group>"; };
 		F40628971AE83703004F1E3B /* FreigSanProLig.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FreigSanProLig.otf; sourceTree = "<group>"; };
@@ -96,13 +82,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F406287F1AE8192F004F1E3B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -128,7 +107,6 @@
 			children = (
 				F406289C1AE8425D004F1E3B /* README.md */,
 				F406286F1AE8192E004F1E3B /* Smile */,
-				F40628851AE8192F004F1E3B /* SmileTests */,
 				F406286E1AE8192E004F1E3B /* Products */,
 				6EA96FC69A379928FB6DBE7E /* Pods */,
 				4EE2FC7B2DE7893E41D4FD54 /* Frameworks */,
@@ -139,7 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				F406286D1AE8192E004F1E3B /* Smile.app */,
-				F40628821AE8192F004F1E3B /* SmileTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,23 +143,6 @@
 				F4F641EB1AE99DE00092C98B /* Smile-Bridging-Header.h */,
 				F40628951AE836C9004F1E3B /* Assets */,
 				F40628711AE8192E004F1E3B /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F40628851AE8192F004F1E3B /* SmileTests */ = {
-			isa = PBXGroup;
-			children = (
-				F40628881AE8192F004F1E3B /* SmileTests.swift */,
-				F40628861AE8192F004F1E3B /* Supporting Files */,
-			);
-			path = SmileTests;
-			sourceTree = "<group>";
-		};
-		F40628861AE8192F004F1E3B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F40628871AE8192F004F1E3B /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -268,40 +228,20 @@
 			productReference = F406286D1AE8192E004F1E3B /* Smile.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F40628811AE8192F004F1E3B /* SmileTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F406288F1AE8192F004F1E3B /* Build configuration list for PBXNativeTarget "SmileTests" */;
-			buildPhases = (
-				F406287E1AE8192F004F1E3B /* Sources */,
-				F406287F1AE8192F004F1E3B /* Frameworks */,
-				F40628801AE8192F004F1E3B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F40628841AE8192F004F1E3B /* PBXTargetDependency */,
-			);
-			name = SmileTests;
-			productName = SmileTests;
-			productReference = F40628821AE8192F004F1E3B /* SmileTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		F40628651AE8192E004F1E3B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Sihao Lu";
 				TargetAttributes = {
 					F406286C1AE8192E004F1E3B = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = 52RD2GH5DP;
-					};
-					F40628811AE8192F004F1E3B = {
-						CreatedOnToolsVersion = 6.3.1;
-						TestTargetID = F406286C1AE8192E004F1E3B;
 					};
 				};
 			};
@@ -319,7 +259,6 @@
 			projectRoot = "";
 			targets = (
 				F406286C1AE8192E004F1E3B /* Smile */,
-				F40628811AE8192F004F1E3B /* SmileTests */,
 			);
 		};
 /* End PBXProject section */
@@ -336,13 +275,6 @@
 				F40628A21AE855C2004F1E3B /* FreigSanProLig.otf in Resources */,
 				F406287A1AE8192E004F1E3B /* Images.xcassets in Resources */,
 				F40628A31AE855C5004F1E3B /* FreigSanProMed.otf in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F40628801AE8192F004F1E3B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,23 +355,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F406287E1AE8192F004F1E3B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F40628891AE8192F004F1E3B /* SmileTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F40628841AE8192F004F1E3B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F406286C1AE8192E004F1E3B /* Smile */;
-			targetProxy = F40628831AE8192F004F1E3B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F40628761AE8192E004F1E3B /* Main.storyboard */ = {
@@ -482,6 +398,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -497,7 +414,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -535,7 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -551,6 +468,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Smile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.jhu.slu21.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Smile/Smile-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -566,42 +484,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Smile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.jhu.slu21.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Smile/Smile-Bridging-Header.h";
-			};
-			name = Release;
-		};
-		F40628901AE8192F004F1E3B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SmileTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smile.app/Smile";
-			};
-			name = Debug;
-		};
-		F40628911AE8192F004F1E3B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SmileTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smile.app/Smile";
 			};
 			name = Release;
 		};
@@ -622,15 +507,6 @@
 			buildConfigurations = (
 				F406288D1AE8192F004F1E3B /* Debug */,
 				F406288E1AE8192F004F1E3B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F406288F1AE8192F004F1E3B /* Build configuration list for PBXNativeTarget "SmileTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F40628901AE8192F004F1E3B /* Debug */,
-				F40628911AE8192F004F1E3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

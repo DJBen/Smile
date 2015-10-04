@@ -40,7 +40,7 @@ class CameraPreviewView: UIView {
         configureView()
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         configureView()
     }
@@ -48,8 +48,8 @@ class CameraPreviewView: UIView {
     // MARK: - Event Handling
     
     func tapped(sender: UIGestureRecognizer) {
-        var pointInPreview = sender.locationInView(sender.view)
-        var pointInCamera = (self.layer as! AVCaptureVideoPreviewLayer).captureDevicePointOfInterestForPoint(pointInPreview)
+        let pointInPreview = sender.locationInView(sender.view)
+        let pointInCamera = (self.layer as! AVCaptureVideoPreviewLayer).captureDevicePointOfInterestForPoint(pointInPreview)
         delegate?.requestCameraFocusChangeToPoint?(pointInCamera, inView: pointInPreview)
     }
 

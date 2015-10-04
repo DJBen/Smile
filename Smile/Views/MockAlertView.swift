@@ -47,7 +47,7 @@ class MockAlertView: UIView {
     }()
     
     lazy var leftButton: UIButton = {
-        let button = UIButton.buttonWithType(.System) as! UIButton
+        let button = UIButton(type: .System)
         button.titleLabel!.font = UIFont(name: "HelveticaNeue", size: 19)
         button.backgroundColor = UIColor.clearColor()
         button.layer.cornerRadius = 8
@@ -56,7 +56,7 @@ class MockAlertView: UIView {
     }()
     
     lazy var rightButton: UIButton = {
-        let button = UIButton.buttonWithType(.System) as! UIButton
+        let button = UIButton(type: .System)
         button.titleLabel!.font = UIFont(name: "HelveticaNeue-Medium", size: 19)
         button.backgroundColor = UIColor.clearColor()
         button.layer.cornerRadius = 8
@@ -71,7 +71,7 @@ class MockAlertView: UIView {
         configureView()
     }
 
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         configureView()
     }
@@ -86,14 +86,14 @@ class MockAlertView: UIView {
     }
     
     func highlightRightButton() {
-        UIView.animateWithDuration(0.75, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: nil, animations: { () -> Void in
+        UIView.animateWithDuration(0.75, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: [], animations: { () -> Void in
             self.backgroundColor = UIColor.lightGrayColor().colorWithAlphaComponent(0.8)
             self.rightButton.backgroundColor = UIColor.whiteColor()
         }, completion: nil)
     }
     
     func unhighlightRightButton() {
-        UIView.animateWithDuration(0.25, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: nil, animations: { () -> Void in
+        UIView.animateWithDuration(0.25, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: [], animations: { () -> Void in
             self.backgroundColor = UIColor(white: 1, alpha: 0.8)
             self.rightButton.backgroundColor = UIColor.clearColor()
         }, completion: nil)
@@ -146,7 +146,7 @@ class MockAlertView: UIView {
             lb.right == v.left
             lb.bottom == lb.superview!.bottom
         }
-        layout(leftButton, verticalSeparator, rightButton) { lb, v, rb in
+        constrain(leftButton, verticalSeparator, rightButton) { lb, v, rb in
             rb.top == lb.top
             rb.left == v.right
             rb.right == rb.superview!.right

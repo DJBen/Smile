@@ -68,7 +68,7 @@ extension UIColor {
     
     class func SmileColorWithPercentage(percentage: Double, gradientStart: CGFloat, gradientEnd: CGFloat, reversed: Bool = false) -> UIColor {
         let difference = abs(Double(gradientEnd - gradientStart))
-        let adjustedPercentage = max(min(1.0, percentage), 0.0)
+        _ = max(min(1.0, percentage), 0.0)
         let offset = difference * percentage
         let value = reversed ? Double(gradientEnd) - offset : Double(gradientStart) + offset
         return UIColor(hue: CGFloat(value) / 360.0, saturation: 0.7, brightness: 0.9, alpha: 1)

@@ -62,7 +62,7 @@ class IntroViewController: UIViewController, MockAlertViewDelegate {
     }()
     
     lazy var animateButton: UIButton = {
-        let button = UIButton.buttonWithType(.Custom) as! UIButton
+        let button = UIButton(type: .Custom)
         button.backgroundColor = UIColor.clearColor()
         button.addTarget(self, action: "animateSmile:", forControlEvents: .TouchUpInside)
         return button
@@ -100,7 +100,7 @@ class IntroViewController: UIViewController, MockAlertViewDelegate {
             c.left == c.superview!.left + 30
             c.right == c.superview!.right - 30
         }
-        layout(self.smileView, self.welcomeTextLabel, self.subtitleTextLabel) { s, w, sub in
+        constrain(self.smileView, self.welcomeTextLabel, self.subtitleTextLabel) { s, w, sub in
             s.height == s.width
             s.centerX == s.superview!.centerX
             self.smileIconVerticalConstraint = (s.centerY == s.superview!.centerY)
@@ -189,7 +189,7 @@ class IntroViewController: UIViewController, MockAlertViewDelegate {
         }
         welcomeTextLabel.alpha = 0
         subtitleTextLabel.alpha = 0
-        UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0, options: nil, animations: { () -> Void in
+        UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0, options: [], animations: { () -> Void in
             self.welcomeTextLabel.alpha = 1
             self.subtitleTextLabel.alpha = 1
         }, completion: nil)
@@ -206,13 +206,13 @@ class IntroViewController: UIViewController, MockAlertViewDelegate {
         constrain(self.smileView) { s in
             self.smileIconVerticalConstraint = (s.top == s.superview!.top + 36)
         }
-        UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0, options: nil, animations: { () -> Void in
+        UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0, options: [], animations: { () -> Void in
             self.darkenGradientView.alpha = 1
             self.welcomeTextLabel.alpha = 0
             self.subtitleTextLabel.alpha = 0
             self.gradientBackgroundView.layoutIfNeeded()
         }) { (complete) -> Void in
-            self.smileView.shakeMouth(duration: 1.5)
+            self.smileView.shakeMouth(1.5)
             completion?(complete: complete)
         }
     }
@@ -220,7 +220,7 @@ class IntroViewController: UIViewController, MockAlertViewDelegate {
     private func configureViews() {
         mockAlertView.delegate = self
         view.addSubview(gradientBackgroundView)
-        layout(gradientBackgroundView) { v in
+        constrain(gradientBackgroundView) { v in
             v.top == v.superview!.top
             v.left == v.superview!.left
             v.right == v.superview!.right

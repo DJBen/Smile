@@ -48,7 +48,7 @@ extension UIImage {
         default:
             break
         }
-        let context = CGBitmapContextCreate(nil, Int(size.width), Int(size.height), CGImageGetBitsPerComponent(self.CGImage), 0, CGImageGetColorSpace(self.CGImage), CGImageGetBitmapInfo(self.CGImage))
+        let context = CGBitmapContextCreate(nil, Int(size.width), Int(size.height), CGImageGetBitsPerComponent(self.CGImage), 0, CGImageGetColorSpace(self.CGImage), CGImageGetBitmapInfo(self.CGImage).rawValue)
         CGContextConcatCTM(context, transform)
         switch imageOrientation {
         case .Left:
@@ -62,7 +62,7 @@ extension UIImage {
         default:
             CGContextDrawImage(context, CGRectMake(0, 0, size.width, size.height), self.CGImage)
         }
-        let cgImg = CGBitmapContextCreateImage(context)
-        return UIImage(CGImage: cgImg)!
+        let cgImg = CGBitmapContextCreateImage(context)!
+        return UIImage(CGImage: cgImg)
     }
 }

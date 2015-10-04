@@ -18,7 +18,7 @@ class PhotoCaptureViewController: UIViewController, AVCaptureVideoDataOutputSamp
     static let numberOfSnaps: Int = 3
     static let autoCaptureInterval: CMTime = CMTimeMake(3, 2)
     
-    enum FaceStatus: Printable {
+    enum FaceStatus: CustomStringConvertible {
         case Usable
         case OutOfBound
         case RollNotPass(CGFloat)
@@ -118,7 +118,7 @@ class PhotoCaptureViewController: UIViewController, AVCaptureVideoDataOutputSamp
             case .OutOfBound:
                 faceOutlineView.lineColor = UIColor(white: 1, alpha: 0.8)
                 guidanceText = "Please move your camera so that your face fills the outline."
-            case .RollNotPass(let _):
+            case .RollNotPass(_):
                 faceOutlineView.lineColor = UIColor.SmileColor(.Red).colorWithAlphaComponent(0.8)
                 guidanceText = "Please keep your head straight."
             case .YawNotPass(let yaw):
@@ -135,9 +135,9 @@ class PhotoCaptureViewController: UIViewController, AVCaptureVideoDataOutputSamp
     var stopCapturing: Bool = false {
         willSet {
             if newValue {
-                println("Capture stopped: no longer processing frames")
+                print("Capture stopped: no longer processing frames")
             } else {
-                println("Start capturing: process frames when adequet")
+                print("Start capturing: process frames when adequet")
             }
         }
     }
@@ -193,13 +193,21 @@ class PhotoCaptureViewController: UIViewController, AVCaptureVideoDataOutputSamp
             self.setCameraFocusAndExposure()
             
             var error: NSError?
-            var input = AVCaptureDeviceInput(device: self.device, error: &error)
+            var input: AVCaptureDeviceInput!
+            do {
+                input = try AVCaptureDeviceInput(device: self.device)
+            } catch let error1 as NSError {
+                error = error1
+                input = nil
+            } catch {
+                fatalError()
+            }
             if error == nil && self.captureSession!.canAddInput(input) {
                 self.captureSession!.addInput(input)
                 self.videoOutput = AVCaptureVideoDataOutput()
                 if self.captureSession!.canAddOutput(self.videoOutput) {
                     self.captureSession!.addOutput(self.videoOutput)
-                    self.videoOutput!.videoSettings = [kCVPixelBufferPixelFormatTypeKey: kCVPixelFormatType_32BGRA]
+                    self.videoOutput!.videoSettings = [kCVPixelBufferPixelFormatTypeKey: Int(kCVPixelFormatType_32BGRA)]
                     self.videoOutput!.alwaysDiscardsLateVideoFrames = true
                     self.videoOutput!.setSampleBufferDelegate(self, queue: self.queue)
                 }
@@ -248,7 +256,7 @@ class PhotoCaptureViewController: UIViewController, AVCaptureVideoDataOutputSamp
         let time = CMSampleBufferGetPresentationTimeStamp(sampleBuffer)
         if lastDetectedTime != nil {
             let allowedTimeRange = CMTimeRangeMake(lastDetectedTime!, CMTimeMake(8, 10))
-            if CMTimeRangeContainsTime(allowedTimeRange, time) == 1 {
+            if CMTimeRangeContainsTime(allowedTimeRange, time) {
             } else {
                 // Face not there any more
                 self.initialUsableDetectTime = nil
@@ -259,13 +267,13 @@ class PhotoCaptureViewController: UIViewController, AVCaptureVideoDataOutputSamp
         }
         if initialUsableDetectTime != nil {
             let allowedTimeRange = CMTimeRangeMake(self.initialUsableDetectTime!, PhotoCaptureViewController.autoCaptureInterval)
-            if CMTimeRangeContainsTime(allowedTimeRange, time) == 1 {
+            if CMTimeRangeContainsTime(allowedTimeRange, time) {
             } else {
                 if stopCapturing {
                     return
                 }
                 if let image = UIImage(fromSampleBuffer: sampleBuffer) {
-                    println(">>> Photo captured!!!!")
+                    print(">>> Photo captured!!!!")
                     self.capturedImages.append(image.imageByFixingOrientation())
                     self.initialUsableDetectTime = nil
                     dispatch_async(dispatch_get_main_queue()) {
@@ -315,7 +323,7 @@ class PhotoCaptureViewController: UIViewController, AVCaptureVideoDataOutputSamp
                         self.initialUsableDetectTime = face.time
                         if self.capturedImages.count < PhotoCaptureViewController.numberOfSnaps {
                             let duration = NSTimeInterval(CMTimeGetSeconds(PhotoCaptureViewController.autoCaptureInterval))
-                            self.faceOutlineView.mouthView.animate(duration: duration)
+                            self.faceOutlineView.mouthView.animate(duration)
                         }
                     }
                 default:
@@ -330,14 +338,14 @@ class PhotoCaptureViewController: UIViewController, AVCaptureVideoDataOutputSamp
     func requestCameraFocusChangeToPoint(point: CGPoint, inView pointInView: CGPoint) {
         showFocusIndicatorAtPoint(pointInView)
         dispatch_async(queue) {
-            self.setCameraFocusAndExposure(point: point)
+            self.setCameraFocusAndExposure(point)
         }
     }
     
     // MARK: - Tutorial View Delegate
     func dismissTutorial(tutorial: TutorialView) {
         self.blurViewBottomConstraint.constant = 0
-        UIView.animateWithDuration(0.4, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: nil, animations: { () -> Void in
+        UIView.animateWithDuration(0.4, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: [], animations: { () -> Void in
             tutorial.alpha = 0
             tutorial.transform = CGAffineTransformMakeScale(0.7, 0.7)
             self.view.layoutIfNeeded()
@@ -353,7 +361,8 @@ class PhotoCaptureViewController: UIViewController, AVCaptureVideoDataOutputSamp
     
     private func setCameraFocusAndExposure(point: CGPoint = CGPointMake(0.5, 0.5)) {
         var error: NSError?
-        if device.lockForConfiguration(&error) {
+        do {
+            try device.lockForConfiguration()
             if device.focusPointOfInterestSupported {
                 device.focusPointOfInterest = point
             }
@@ -369,8 +378,9 @@ class PhotoCaptureViewController: UIViewController, AVCaptureVideoDataOutputSamp
             device.subjectAreaChangeMonitoringEnabled = true
             interestPoint = point
             device.unlockForConfiguration()
-        } else {
-            println("Failed to set focus and exposure to point \(point): \(error)")
+        } catch let error1 as NSError {
+            error = error1
+            print("Failed to set focus and exposure to point \(point): \(error)")
         }
     }
     
@@ -387,21 +397,21 @@ class PhotoCaptureViewController: UIViewController, AVCaptureVideoDataOutputSamp
         blurView.contentView.addSubview(vibrantView)
         vibrantView.contentView.addSubview(guideLabel)
         
-        layout(guideLabel) { g in
+        constrain(guideLabel) { g in
             g.bottom == g.superview!.bottom - 10
             g.left == g.superview!.left + 40
             g.right == g.superview!.right - 40
             g.top == g.superview!.top + 10
         }
         
-        layout(vibrantView) { v in
+        constrain(vibrantView) { v in
             v.top == v.superview!.top
             v.bottom == v.superview!.bottom
             v.left == v.superview!.left
             v.right == v.superview!.right
         }
         
-        layout(blurView, previewView, faceOutlineView) { v, p, f in
+        constrain(blurView, previewView, faceOutlineView) { v, p, f in
             v.height == 80
             self.blurViewBottomConstraint = (v.bottom == v.superview!.bottom)
             v.left == v.superview!.left
@@ -438,7 +448,7 @@ class PhotoCaptureViewController: UIViewController, AVCaptureVideoDataOutputSamp
         }
         stopCapturing = true
         view.addSubview(tutorialView)
-        layout(tutorialView, blurView) { t, b in
+        constrain(tutorialView, blurView) { t, b in
             t.top == t.superview!.top
             t.left == t.superview!.left
             t.right == t.superview!.right
@@ -447,7 +457,7 @@ class PhotoCaptureViewController: UIViewController, AVCaptureVideoDataOutputSamp
         self.blurViewBottomConstraint.constant = 80
         tutorialView.alpha = 0
         tutorialView.transform = CGAffineTransformMakeScale(0.7, 0.7)
-        UIView.animateWithDuration(0.4, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: nil, animations: { () -> Void in
+        UIView.animateWithDuration(0.4, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: [], animations: { () -> Void in
             self.tutorialView.alpha = 1
             self.tutorialView.transform = CGAffineTransformIdentity
             self.view.layoutIfNeeded()
@@ -471,10 +481,10 @@ class PhotoCaptureViewController: UIViewController, AVCaptureVideoDataOutputSamp
         view.addSubview(flashView)
         view.bringSubviewToFront(flashView)
         flashView.alpha = 0
-        UIView.animateWithDuration(duration / 2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0.2, options: nil, animations: { () -> Void in
+        UIView.animateWithDuration(duration / 2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0.2, options: [], animations: { () -> Void in
             flashView.alpha = 0.9
         }) { (_) -> Void in
-            UIView.animateWithDuration(duration / 2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: nil, animations: { () -> Void in
+            UIView.animateWithDuration(duration / 2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: [], animations: { () -> Void in
                 flashView.alpha = 0
             }) { (_) -> Void in
                 flashView.removeFromSuperview()

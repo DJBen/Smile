@@ -24,29 +24,30 @@ class DetectionManager: NSObject {
     }
         
     func detectFacesWithImage(image: UIImage, tag: Int = 0, progress: ((progress: Double) -> Void)? = nil, completion: (tag: Int, faces: [Face]?, error: NSError?) -> Void) -> Request {
-        let detectionApiUrl = apiUrl.stringByAppendingPathComponent("detection/detect")
-        let imageData = UIImageJPEGRepresentation(image, 0.8)
+        let detectionApiUrl = (apiUrl as NSString).stringByAppendingPathComponent("detection/detect")
+        let imageData = UIImageJPEGRepresentation(image, 0.8)!
         let parameters: [String: String] = ["api_key" : self.apiKey, "api_secret": self.apiSecret, "mode": "oneface", "attributes": "smiling", "async": "false"]
         let (urlString, data) = self.urlRequestWithComponents(detectionApiUrl, parameters: parameters, imageData: imageData)
-        let request = upload(urlString, data).progress { (bytesWritten, totalBytesWritten, totalBytesExpectedToWrite) -> Void in
-            println("Uploading \(totalBytesWritten) / \(totalBytesExpectedToWrite) = \(Double(totalBytesWritten) / Double(totalBytesExpectedToWrite) * 100) %")
+        let request = upload(urlString, data: data).progress { (bytesWritten, totalBytesWritten, totalBytesExpectedToWrite) -> Void in
+            print("Uploading \(totalBytesWritten) / \(totalBytesExpectedToWrite) = \(Double(totalBytesWritten) / Double(totalBytesExpectedToWrite) * 100) %")
             let percentage: Double = Double(totalBytesWritten) / Double(totalBytesExpectedToWrite)
             dispatch_async(dispatch_get_main_queue()) {
                 progress?(progress: percentage)
             }
-            }.responseJSON { (request, response, JSON, error) -> Void in
-                if error != nil {
-                    println("ERROR \(error)")
+            }.responseJSON { (request, response, result) -> Void in
+                if case .Success(let JSON) = result {
+                    print("JSON \(JSON)")
+                    let faces = Face.facesFromDictionary(JSON as! [String: AnyObject])
+                    print(faces)
                     dispatch_async(dispatch_get_main_queue()) {
-                        completion(tag: tag, faces: nil, error: error)
+                        completion(tag: tag, faces: faces, error: nil)
+                    }
+                } else if case .Failure(_, let error) = result {
+                    print("ERROR \(error)")
+                    dispatch_async(dispatch_get_main_queue()) {
+                        completion(tag: tag, faces: nil, error: error as NSError)
                     }
                     return
-                }
-                println("JSON \(JSON)")
-                let faces = Face.facesFromDictionary(JSON as! [String: AnyObject])
-                println(faces)
-                dispatch_async(dispatch_get_main_queue()) {
-                    completion(tag: tag, faces: faces, error: nil)
                 }
         }
         return request
@@ -57,7 +58,7 @@ class DetectionManager: NSObject {
     private func urlRequestWithComponents(urlString:String, parameters:Dictionary<String, String>, imageData:NSData) -> (URLRequestConvertible, NSData) {
         
         // create url request to send
-        var mutableURLRequest = NSMutableURLRequest(URL: NSURL(string: urlString)!)
+        let mutableURLRequest = NSMutableURLRequest(URL: NSURL(string: urlString)!)
         mutableURLRequest.HTTPMethod = Alamofire.Method.POST.rawValue
         let boundaryConstant = "myRandomBoundary12345";
         let contentType = "multipart/form-data;boundary="+boundaryConstant

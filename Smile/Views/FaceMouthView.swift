@@ -13,18 +13,18 @@ class FaceMouthViewLayer: CAShapeLayer {
         super.init()
     }
 
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    override class func needsDisplayForKey(key: String!) -> Bool {
+    override class func needsDisplayForKey(key: String) -> Bool {
         if key == "progress" {
             return true
         }
         return super.needsDisplayForKey(key)
     }
     
-    override func actionForKey(event: String!) -> CAAction! {
+    override func actionForKey(event: String) -> CAAction? {
         if event == "progress" {
             let animation = CABasicAnimation(keyPath: event)
             animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
@@ -33,10 +33,6 @@ class FaceMouthViewLayer: CAShapeLayer {
         return super.actionForKey(event)
     }
     
-    override func display() {
-        let context = UIGraphicsGetCurrentContext()
-        
-    }
 }
 
 @IBDesignable class FaceMouthView: UIView {
@@ -87,7 +83,7 @@ class FaceMouthViewLayer: CAShapeLayer {
         configureView()
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         configureView()
     }
